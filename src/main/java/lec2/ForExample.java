@@ -11,34 +11,34 @@ public class ForExample {
             }
 
             if(a[i] == 3){
-                continue;
+//                continue;
             }
 
             System.out.println(a[i]);
         }
 
         //=========================================
-//
-//        int[] b = {1,2,3,4,5,6,7};
-//
-//        int indexB = 0;
+
+        int[] b = {1,2,3,4,5,6,7};
+
+        int indexB = 0;
 //
 //        while (indexB < b.length){
 //            System.out.println(b[indexB]);
-////            if(b[indexB] == 3){
-////                break;
-//////                continue;
-////            }
+//            if(b[indexB] == 3){
+//                break;
+////                continue;
+//            }
 //            ++indexB;
 //        }
-//
+
 
         //=========================================
 
         int[] c = {10, 20, 30};
 
         do {
-            System.out.println(c[0]);
+//            System.out.println(c[0]);
         } while (false);
 //        } while (true);
 
@@ -47,6 +47,8 @@ public class ForExample {
 
         int[] d = {100,200,300};
 
+
+        //read only
         for(int number : d){
             System.out.println("Foreach: " + number);
         }

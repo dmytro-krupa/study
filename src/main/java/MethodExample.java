@@ -1,5 +1,3 @@
-package lec2;
-
 public class MethodExample {
     public static void main(String[] args) {
 
