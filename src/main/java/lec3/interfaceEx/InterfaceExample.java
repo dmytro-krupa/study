@@ -4,7 +4,11 @@ public class InterfaceExample {
 
     public static void main(String[] args) {
 //    Process process = new Process();
+
+
         Process process = new NumberProcess();
+
+        process.log();
 
         System.out.println(process.invoke());
 

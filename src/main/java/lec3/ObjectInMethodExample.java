@@ -1,3 +1,5 @@
+package lec3;
+
 public class ObjectInMethodExample {
 
 

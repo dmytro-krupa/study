@@ -4,6 +4,16 @@ public class Parent {
     //1
     public static int a = 10;
 
+    //2
+    static {
+        System.out.println("Parent static block");
+    }
+
+    //3
+    {
+        System.out.println("Parent non-static block");
+    }
+
     //3
     public String name = "Parent name";
 

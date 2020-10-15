@@ -1,13 +1,24 @@
 package lec3.initializeProcessExample;
 
+//is-a
 public class Child extends Parent {
-    //2
+    //1
     public static int b = 10;
 
     //5
     public String name = "Child name";
     //5
     public String childName = "Child name";
+
+    //2
+    static {
+        System.out.println("Child static block");
+    }
+
+    //5
+    {
+        System.out.println("Child non-static block");
+    }
 
     //6
     public Child() {

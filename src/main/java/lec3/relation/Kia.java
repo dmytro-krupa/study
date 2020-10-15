@@ -1,5 +1,7 @@
 package lec3.relation;
 
+import java.time.LocalDateTime;
+
 //is-a
 public class Kia extends Car{
 
@@ -15,7 +17,7 @@ public class Kia extends Car{
         this.engine = new Engine();
     }
 
-    //агрегаціяого автомобіля
+    //агрегація автомобіля
     //логічно не підходить, адже такий підхід ознаяає що один двигун може бути частиною інш
     public Kia(Engine engine) {
         this.engine = engine;
