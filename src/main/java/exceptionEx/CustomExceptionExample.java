@@ -1,6 +1,11 @@
 package exceptionEx;
 
 public class CustomExceptionExample {
+    /*
+        Теми:
+            1. checked i unchecked exceptions
+            2. ієрархія Throwable
+     */
     public static void main(String[] args) {
         int a = 5;
         int b = 0;
