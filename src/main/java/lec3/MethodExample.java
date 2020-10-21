@@ -35,6 +35,14 @@ public class MethodExample {
         return c;
     }
 
+    /*
+
+    intArray -> int[3]
+
+    intArray != array
+
+    array -> int[1]
+     */
     static int sumOfArray(int[] array){
         int c = 0;
 
@@ -42,8 +50,9 @@ public class MethodExample {
             c += a;
         }
 
-        array[1] = 100;
-
+//        array = new int[1];
+//
+//        array[0] = 555;
 
         return c;
     }

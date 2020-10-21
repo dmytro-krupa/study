@@ -1,4 +1,4 @@
-package staticFieldInheritance;
+package lec4.staticFieldInheritance;
 
 public class Parent {
     public static int a = 10;
