@@ -1,4 +1,4 @@
-package lec4.staticField;
+package staticField;
 
 public class StaticFieldExample {
     public static void main(String[] args) {

@@ -16,7 +16,6 @@ public class LinkedList implements Queue{
         1. remove this constructor
         2. add private default constructor
         3. add static method to create a list
-        4. create interface
 
         5. add method add(int value)
         6. add method delete(int index)
@@ -63,7 +62,8 @@ public class LinkedList implements Queue{
 
     @Override
     public void add(int value) {
-
+        //потрібно замінити існуючий head
+        //створити новий об'єкт Node
     }
 
     @Override

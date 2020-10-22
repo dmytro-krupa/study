@@ -17,6 +17,10 @@ public class MethodOverloadExample {
         return 1;
     }
 
+
+
+
+
     static int f(int i, String s){
         System.out.println("int f(int, String)");
         return 1;
@@ -28,8 +32,8 @@ public class MethodOverloadExample {
     }
 
     //приклад нижче неможливо однозначно визначити
-//
-    //    static void f(String s, int i){
+
+//        static void f(String s, int i){
 //        System.out.println("int f(String, int)");
 ////        return 1;
 //    }

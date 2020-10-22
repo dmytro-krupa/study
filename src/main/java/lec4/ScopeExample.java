@@ -6,14 +6,14 @@ public class ScopeExample {
         // тут змінна x недоступна
 //        System.out.println(x);
 
-//        int x = 10;
+        int x = 10;
 
         {
-            int x = 10;
-            // тут змінна x доступна
-
+//            int x = 10;
+//            // тут змінна x доступна
+//
             System.out.println(x);
-
+//
         }
 
 
