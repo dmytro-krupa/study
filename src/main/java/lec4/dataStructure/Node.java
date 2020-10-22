@@ -1,4 +1,4 @@
-package dataStructure;
+package lec4.dataStructure;
 
 public class Node {
     private int value;
