@@ -1,4 +1,4 @@
-package staticFieldInheritance;
+package lec5.staticFieldInheritance;
 
 public class StaticFieldInheritanceExample {
     public static void main(String[] args) {

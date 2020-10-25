@@ -1,3 +1,5 @@
+package lec5;
+
 public class FinalMethodExample {
     public static void main(String[] args) {
 

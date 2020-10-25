@@ -1,4 +1,4 @@
-package staticField;
+package lec5.staticField;
 
 public class Counter {
     //теж можна оголосити так. Не ініціалізоване поле int завжди рівне 0.

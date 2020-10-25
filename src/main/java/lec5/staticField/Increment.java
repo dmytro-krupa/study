@@ -1,4 +1,4 @@
-package staticField;
+package lec5.staticField;
 
 public class Increment {
     void increment(){
