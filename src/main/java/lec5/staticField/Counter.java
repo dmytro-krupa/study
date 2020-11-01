@@ -5,5 +5,22 @@ public class Counter {
     //але краще так не робити
 //    public static int counter;
 
-    public static int counter = 0;
+    public  int counter = 0;
+
+    public static void print(){
+        System.out.println("static");
+    }
+    public void printe(){
+        System.out.println("printwe");
+        print();
+    }
+
+    private Counter(int counter) {
+        this.counter = counter;
+    }
+
+    public static Counter createCounter(int counter){
+        return new Counter(counter);
+    }
+
 }

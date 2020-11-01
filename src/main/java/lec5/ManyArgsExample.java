@@ -26,7 +26,6 @@ public class ManyArgsExample {
         return c;
     }
 
-//    public static int sum(int a, int b, int... array){
     public static int sum(int a, int... array){
         int c = a;
 

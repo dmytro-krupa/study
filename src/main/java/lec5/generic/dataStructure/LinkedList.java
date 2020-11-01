@@ -1,7 +1,7 @@
 package lec5.generic.dataStructure;
 
 public class LinkedList<T> implements Queue<T> {
-    private Node head;
+    private Node<T> head;
 
     /*
     Теми:
@@ -35,7 +35,7 @@ public class LinkedList<T> implements Queue<T> {
             return size;
         }
 
-        Node headPointer = head;
+        Node<T> headPointer = head;
 
         while (headPointer != null){
             ++size;

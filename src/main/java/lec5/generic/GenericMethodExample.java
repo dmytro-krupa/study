@@ -7,16 +7,10 @@ public class GenericMethodExample {
         test(new User());
         test("test");
         test(1);
-        test(test23(""));
     }
 
     public static <T> T test(T t){
         System.out.println(t.getClass().getTypeName());
         return t;
     }
-
-    public static <T> T test23(T t){
-        return t;
-    }
-
 }
