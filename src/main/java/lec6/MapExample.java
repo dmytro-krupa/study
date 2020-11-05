@@ -22,27 +22,25 @@ public class MapExample {
         treeMap.put("1","a");
         treeMap.put("3","d");
         treeMap.put("1","c");
-
-        System.out.println("linkedHashMap = " + linkedHashMap);
-        System.out.println("hashMap = " + hashMap);
-        System.out.println("treeMap = " + treeMap);
-
-
+//
+//        System.out.println("hashMap = " + hashMap);
+//        System.out.println("linkedHashMap = " + linkedHashMap);
+//        System.out.println("treeMap = " + treeMap);
+//
+//
 
 
         List<Car> cars = new ArrayList<>();
 
         cars.add(new Car(1000, 2001, "A"));
-        cars.add(new Car(3500, 2007, "C"));
+        cars.add(new Car(35000, 2007, "C"));
         cars.add(new Car(7500, 2005, "B"));
 
-        Map<String, Car> carMap = new TreeMap<>();
+        Map<Car, Integer> carMap = new TreeMap<>();
 
-        carMap.put(cars.get(0).carBrand, cars.get(0));
-        carMap.put(cars.get(1).carBrand, cars.get(1));
-        carMap.put(cars.get(2).carBrand, cars.get(2));
-
-
+        carMap.put(cars.get(0), cars.get(0).getPrice());
+        carMap.put(cars.get(1), cars.get(1).getPrice());
+        carMap.put(cars.get(2), cars.get(2).getPrice());
 
         System.out.println("carMap = " + carMap);
 

@@ -8,7 +8,7 @@ public class ArrayListExample {
     public static void main(String[] args) {
 
 
-        List<String> list = new LinkedList<>();
+        List<String> list = new ArrayList<>();
 
         list.add("some");
         list.add("text");

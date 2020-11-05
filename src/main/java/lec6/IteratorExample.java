@@ -23,7 +23,6 @@ public class IteratorExample {
     }
 
     public static class IterableLinkedList extends LinkedList implements Iterable<Integer>{
-        int x;
         public IterableLinkedList(Node head) {
             super(head);
         }

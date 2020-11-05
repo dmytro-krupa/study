@@ -1,4 +1,4 @@
-package exceptionEx;
+package lec7.exceptionEx;
 
 public enum ErrorCode {
     OK_201,

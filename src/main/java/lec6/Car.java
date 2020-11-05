@@ -14,9 +14,26 @@ public class Car implements Comparable<Car> , Iterable<Car>{
         this.carBrand = carBrand;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
     @Override
     public Iterator<Car> iterator() {
         return null;
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 
     @Override
@@ -31,6 +48,7 @@ public class Car implements Comparable<Car> , Iterable<Car>{
 
         return 0;
     }
+
 
 
     @Override

@@ -1,7 +1,7 @@
 package lec4.dataStructure;
 
 public class LinkedList implements Queue{
-    private Node head;
+    protected Node head;
 
     /*
     Теми:
