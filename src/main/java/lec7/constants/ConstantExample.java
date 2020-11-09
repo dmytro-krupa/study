@@ -1,4 +1,4 @@
-package constants;
+package lec7.constants;
 
 public class ConstantExample {
     public static void main(String[] args) {
