@@ -3,7 +3,6 @@ package lec7;
 public class InnerClassExample {
     public static void main(String[] args) {
         InnerClassExample innerClassExample = new InnerClassExample();
-
         innerClassExample.test();
     }
 

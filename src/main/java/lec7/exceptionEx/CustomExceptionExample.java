@@ -13,6 +13,7 @@ public class CustomExceptionExample {
         try {
             div(a,b);
         } catch (SystemException e) {
+            e.printStackTrace();
             System.out.println(e.getMessage());
             System.out.println("Error code: " + e.getErrorCode());
         }
@@ -20,7 +21,7 @@ public class CustomExceptionExample {
 
     }
 
-    static int div(int a, int b) {
+    static int div(int a, int b) throws SystemException{
         if(b == 0){
             throw new SystemException("Divide by 0", ErrorCode.ERROR_400);
         }

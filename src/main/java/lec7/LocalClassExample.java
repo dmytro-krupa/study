@@ -10,8 +10,9 @@ public class LocalClassExample {
     }
 
     public void q(){
-        final int x = 5;
+        int x = 5;
 
+        x = 4;
         class PrintIt{
             void print(int a){
 //                System.out.println(a);

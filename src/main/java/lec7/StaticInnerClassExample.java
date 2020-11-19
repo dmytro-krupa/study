@@ -2,7 +2,7 @@ package lec7;
 
 public class StaticInnerClassExample {
     public static void main(String[] args) {
-//        System.out.println(A.x);
+        A.B ab = new A.B();
 
     }
 

@@ -1,5 +1,10 @@
 package lec7.anonymous;
 
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 public class AnonymousClassExample {
     public static void main(String[] args) {
 
@@ -14,6 +19,9 @@ public class AnonymousClassExample {
         });
 
         button.setClickAction(() -> System.out.println("from lambda"));
+
+        A a = new A();
+        a.action("SOME TEXT 2").invoke();
     }
 
 
@@ -24,8 +32,8 @@ public class AnonymousClassExample {
         }
     }
 
-    class A{
-        Action action(String printIt){
+    static class A{
+        public Action action(final String printIt){
 //            printIt = "4";
             return new Action() {
                 @Override
