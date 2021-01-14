@@ -38,10 +38,12 @@ public class ListToMapStreamEx {
         userList.add(user10);
         userList.add(user11);
 
-        Map<String, List<User>> firstNameToUser = userList.stream().collect(Collectors.groupingBy(e -> e.getFirstName()));
-        Map<String, User> emailToUser = userList.stream().distinct().collect(Collectors.toMap(e -> e.getEmail(), e -> e));
+//        Map<String, List<User>> firstNameToUser = userList.stream().collect(Collectors.groupingBy(e -> e.getFirstName()));
+        Map<String, User> emailToUser = userList.stream()
+                .distinct()
+                .collect(Collectors.toMap(e -> e.getEmail(), e -> e));
 
-        System.out.println(firstNameToUser);
+//        System.out.println(firstNameToUser);
         System.out.println(emailToUser);
 
 

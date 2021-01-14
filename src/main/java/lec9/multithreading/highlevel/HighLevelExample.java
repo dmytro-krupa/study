@@ -6,11 +6,11 @@ import java.util.concurrent.Future;
 
 public class HighLevelExample {
     public static void main(String[] args) {
-        ExecutorService executor = Executors.newSingleThreadExecutor();
-//        executor.submit(() -> {
-//            String threadName = Thread.currentThread().getName();
-//            System.out.println("Hello " + threadName);
-//        });
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        executor.submit(() -> {
+            String threadName = Thread.currentThread().getName();
+            System.out.println("Hello " + threadName);
+        });
 
 
         try {
@@ -40,7 +40,13 @@ public class HighLevelExample {
 
 
 
-        executor.shutdown();
+        try{
+            executor.shutdown();
+        } catch (Exception e){
+            executor.shutdown();
+        } finally {
+            executor.shutdownNow();
+        }
 
     }
 }

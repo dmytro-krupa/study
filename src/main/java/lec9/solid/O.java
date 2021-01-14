@@ -11,6 +11,12 @@ public class O {
         double r;
     }
 
+    public static class Triangle extends GeometricFigure{
+        double a;
+        double b;
+        double c;
+    }
+
     public static class Manager{
         public double getArea(GeometricFigure figure){
             if(figure instanceof Square){

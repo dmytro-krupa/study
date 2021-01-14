@@ -27,13 +27,14 @@ public class SimpleMultiThExample {
         simpleThread3.start();
 
 //
-//        try {
-//            Thread.sleep(4000);
-//        } catch (Exception e){
-//            //don't do that
-//        }
+        try {
+            Thread.sleep(4000);
+        } catch (Exception e){
+            //don't do that
+        }
 //
-//        simpleThread2.interrupt();
+//        simpleThread2.stopThread();
+        simpleThread2.interrupt();
 
 
 
@@ -57,19 +58,19 @@ public class SimpleMultiThExample {
         }
     }
     public static class SimpleThread2 extends Thread{
-//        private boolean shouldBeStopped = false;
+        private boolean shouldBeStopped = false;
 //
-//        public void stopThread(){
-//            this.shouldBeStopped = true;
-//        }
+        public void stopThread(){
+            this.shouldBeStopped = true;
+        }
 
         @Override
         public void run() {
 
-//            while (!isInterrupted()){
+            while (!isInterrupted()){
 //            while (!shouldBeStopped){
                 Calculations.calc2();
-//            }
+            }
 
         }
     }
