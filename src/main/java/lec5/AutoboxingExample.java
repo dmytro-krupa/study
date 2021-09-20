@@ -32,8 +32,8 @@ public class AutoboxingExample {
 
 
 
-        Integer c1 = 100;
-        Integer c2 = 100;
+        Integer c1 = 200;
+        Integer c2 = 200;
 
         System.out.println(c1 == c2);
 

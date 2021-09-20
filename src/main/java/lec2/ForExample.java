@@ -14,7 +14,7 @@ public class ForExample {
 //                continue;
             }
 
-            System.out.println(a[i]);
+//            System.out.println(a[i]);
         }
 
         //=========================================
@@ -54,5 +54,18 @@ public class ForExample {
         }
 
         //=========================================
+
+
+//        int[][] x = {{10,2},{20},{30}};
+//
+//        for(int i = 0; i < x.length; i++){
+//            for (int j = 0; j < x[i].length; j++){
+//                System.out.print(x[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
     }
+
+
 }

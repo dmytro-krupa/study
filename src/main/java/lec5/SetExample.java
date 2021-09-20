@@ -1,4 +1,4 @@
-package lec6;
+package lec5;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;

@@ -4,12 +4,12 @@ public class NumberProcess extends Process{
     @Override
     public int invoke() {
         //приклад використання ключового слова super
-//        System.out.println("Some log");
-//        return super.invoke();
+        System.out.println("Some log");
+        return super.invoke();
 
 
-        System.out.println("NumberProcess invoke");
-        return 42;
+//        System.out.println("NumberProcess invoke");
+//        return 42;
     }
 
     @Override

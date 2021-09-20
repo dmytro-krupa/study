@@ -7,13 +7,15 @@ public class Lec3User extends SuperUser{
     //якщо є хоча б один конструктор з параметрами, тоді без параметрів потрібно оголошувати явно
     public Lec3User() {
         //завжди неявно викликається
-        //super();
+//        super();
         this("default name", 18);
     }
 
     public Lec3User(String name, int age) {
         //завжди неявно викликається
         //super();
+        super(age);
+
         this.name = name;
         this.age = age;
     }

@@ -9,11 +9,13 @@ public class InterfaceExample {
         Process process = new NumberProcess();
 
         process.log();
-
+//
         System.out.println(process.invoke());
 
-//        Process.staticLog();
+        Process.staticLog();
 
+
+//        System.out.println(process instanceof SuperProcess);
 
     }
 }

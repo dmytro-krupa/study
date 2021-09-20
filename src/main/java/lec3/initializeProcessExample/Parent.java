@@ -11,6 +11,7 @@ public class Parent {
 
     //3
     {
+        name = "";
         System.out.println("Parent non-static block");
     }
 

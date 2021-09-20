@@ -3,7 +3,7 @@ package lec1;
 public class PrimitiveExample {
     public static void main(String[] args) {
         int i = 53;
-        long l = 5333333333333333333L;
+        long l = 53333333333333L;
 
         byte b1 = -128;
         byte b2 = 127;

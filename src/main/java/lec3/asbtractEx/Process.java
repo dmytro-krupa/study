@@ -1,6 +1,8 @@
 package lec3.asbtractEx;
 
 public abstract class Process {
+    int a = 5;
+
     public int invoke() {
         System.out.println("Process invoke");
         System.out.println(invokeString());

@@ -1,8 +1,12 @@
 package lec3;
 
+import java.math.BigDecimal;
+
 public class MethodExample {
     public static void main(String[] args) {
         int[] intArray = {1,2,3};
+
+        int[] q = intArray;
 
         int a = 10;
         int b = 200;
@@ -13,7 +17,6 @@ public class MethodExample {
 
 //        System.out.println("sumOfArray(int[] array) = " + sumOfArray(intArray));
 //
-//        System.out.println();
 //        System.out.println();
 //
 //        for(int i : intArray){
@@ -49,22 +52,17 @@ public class MethodExample {
         for(int a : array){
             c += a;
         }
+//==================================
 
 //        array = new int[1];
 //
 //        array[0] = 555;
 
+
+
         return c;
     }
 
-    /*
-                        objectA -> (A1)
-  до виконання 62:      a -> (A1)
-  після виконання 62:      a -> (A2)
-  у 63 рядку старий обєкт не зміниться
-
-
-     */
 
     static void rename(A a){
         //a

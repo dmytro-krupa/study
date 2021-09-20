@@ -1,5 +1,6 @@
 package lec3;
 
+//dupl
 public class ObjectInMethodExample {
 
 

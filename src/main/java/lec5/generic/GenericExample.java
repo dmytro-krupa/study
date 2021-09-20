@@ -25,7 +25,9 @@ public class GenericExample {
         Pair<User, Book> pair = getPair(books, users);
 
 
+        Pair<Integer, Integer> testPair =  test();
 
+//        System.out.println(testPair.getValue() + 5);
 
     }
 
@@ -36,4 +38,10 @@ public class GenericExample {
     public static BigTuple<User, Book, LocalDate> getBigTuple(Book[] books, User[] users){
         return new BigTuple<>(users[0], books[0], LocalDate.now());
     }
+
+
+    public static Pair<Integer, Integer> test(){
+        return new Pair<>(1, 2);
+    }
+
 }

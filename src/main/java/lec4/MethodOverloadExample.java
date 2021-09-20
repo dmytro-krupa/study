@@ -2,8 +2,7 @@ package lec4;
 
 public class MethodOverloadExample {
     public static void main(String[] args) {
-
-        int i = f(4);
+        f(4, "");
         f();
 
     }
@@ -33,8 +32,7 @@ public class MethodOverloadExample {
 
     //приклад нижче неможливо однозначно визначити
 
-//        static void f(String s, int i){
+//    static void f(String s, int i){
 //        System.out.println("int f(String, int)");
-////        return 1;
 //    }
 }

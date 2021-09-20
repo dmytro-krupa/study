@@ -6,7 +6,7 @@ public class Person {
     private int yob;
 
     public String getFirstName() {
-//        System.out.println("Some data");
+        System.out.println("Some data");
         return firstName;
     }
 
@@ -28,5 +28,10 @@ public class Person {
 
     public void setYob(int yob) {
         this.yob = yob;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " " + yob;
     }
 }

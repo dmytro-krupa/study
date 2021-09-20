@@ -18,14 +18,29 @@ public class OOPExample {
         }
     }
 
-    public static class C{}
-
+    public static class C extends A{
+        public C(int a) {
+            super(a);
+        }
+    }
 
     public static void main(String[] args) {
         B b = new B(5);
         A a = b;
 
-        System.out.println(((B)a).a);
+        C c = new C(2);
+
+        a = c;
+
+
+
+
+        System.out.println(a instanceof C);
+
+
+
+
+//        System.out.println(((B)a).a);
 
 
     }

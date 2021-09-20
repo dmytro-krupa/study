@@ -20,6 +20,8 @@ public class SimpleOOPExample {
 //    System.out.println(student.getFirstName());
 //    System.out.println(student.getMark());
 
+//==================================
+
 
 //        Student student = new Student();
 //
@@ -47,6 +49,17 @@ public class SimpleOOPExample {
 //        }
 
 
+
+//        Student s1 = new Student();
+//        Student s2 = new Student();
+//        Student s3 = new Student();
+//
+//        System.out.println(s1.equals(s1));
+//
+//        System.out.println(s1.equals(s2));
+//        System.out.println(s2.equals(s1));
+
+//==================================
 
         Student s1 = new Student();
         Student s2 = new Student();

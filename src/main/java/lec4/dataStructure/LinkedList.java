@@ -10,7 +10,6 @@ public class LinkedList implements Queue{
         3. Структури даних: дерево, стек==LIFO, черга==FIFO
         4. Складність алгоритмів (коду)
      */
-
     /*
     TASKS:
         1. remove this constructor
@@ -25,6 +24,10 @@ public class LinkedList implements Queue{
 
     public LinkedList(Node head) {
         this.head = head;
+    }
+
+
+    public LinkedList() {
     }
 
     @Override

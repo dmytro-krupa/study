@@ -1,4 +1,4 @@
-package lec5.staticField;
+package lec4.staticField;
 
 public class StaticFieldExample {
     public static void main(String[] args) {
@@ -15,14 +15,16 @@ public class StaticFieldExample {
 //
 //        b.increment();
 //        b.increment();
+//        a.increment();
 //        b.increment();
 //
 //        System.out.println(Counter.counter);
 
 
-        Counter counter = Counter.createCounter(5);
-
-        System.out.println(counter.counter);
+        Counter counter = Counter.createEmptyCounter();
 
     }
+
+
+
 }
