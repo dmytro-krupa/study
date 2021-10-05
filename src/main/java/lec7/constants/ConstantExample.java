@@ -7,7 +7,7 @@ public class ConstantExample {
 //        System.out.println(ConstantInterface.SUPER_NUMBER);
 
 
-        System.out.println(ConstantClass.UserConstants.Admin.ADMIN_ROLE);
+        System.out.println(ConstantClass.UrlConstants.Admin.ADMIN_URL);
 
 
     }

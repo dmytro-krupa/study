@@ -22,7 +22,7 @@ public class OptionalExample {
         }
 
 //        User user = optional.orElseThrow(() -> new SystemException("", ErrorCode.ERROR_400));
-        String string = optional.map(e -> e.getFirstName()).orElseGet(() -> "no");
+        String string = optional.map(e -> e.getFirstName()).orElse("no");
 
         System.out.println(string);
 

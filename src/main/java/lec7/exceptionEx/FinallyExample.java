@@ -10,7 +10,8 @@ public class FinallyExample {
     static int get(){
 
         try{
-            A a = new A();
+            A a = null;
+//            A a = new A();
 
             a.hashCode();
 

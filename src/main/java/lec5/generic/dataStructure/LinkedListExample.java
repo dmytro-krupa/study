@@ -15,6 +15,7 @@ public class LinkedListExample {
 
 
 
+
 //        System.out.println(linkedList.size());
 //        System.out.println("Size = " + queue.size());
 

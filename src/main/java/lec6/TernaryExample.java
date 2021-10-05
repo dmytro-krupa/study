@@ -1,6 +1,9 @@
 package lec6;
 
 public class TernaryExample {
+    //it - 21/22
+    //it - 13
+
     public static void main(String[] args) {
         int age = 15;
 

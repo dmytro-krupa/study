@@ -1,15 +1,20 @@
 package lec6;
 
+
+import javacl.SimpleEnum;
 import java.io.Serializable;
+
 
 public class EnumExample {
     public static void main(String[] args) {
+
+
         UserType someType = UserType.ADMIN;
 
 //        System.out.println("someType.name() = " + someType.name());
 //        System.out.println("someType.ordinal() = " + someType.ordinal());
 //        System.out.println("someType.toString() = " + someType.toString());
-//
+
 //
 //        for(UserType userType : UserType.values()){
 //            System.out.println("userType : " + userType);
@@ -42,6 +47,9 @@ public class EnumExample {
 
         System.out.println("notSimple = " + notSimple.getDescription());
 
+//        notSimple.setDescription("dfff");
+
+        System.out.println("notSimple = " + NotSimple.A.getDescription());
 
         //========================================
 
@@ -52,7 +60,7 @@ public class EnumExample {
 
 
         switch (user.userType){
-            case USER -> System.out.println(" 1 : USER");
+            case USER -> {System.out.println(" 1 : USER");}
             case MANAGER -> System.out.println(" 1 : MANAGER");
             case ADMIN -> System.out.println(" 1 : ADMIN");
         }
@@ -75,38 +83,29 @@ public class EnumExample {
         }
     }
 
-    public enum UserType{
+    public enum UserType {
         ADMIN,
         USER,
         MANAGER;
 
 
-
-
-
-
-
-
-
-
-
-        public static UserType fromValue(String value){
-            String upperCaseValue = value.toUpperCase();
-
-            for(UserType userType : UserType.values()){
-                if(userType.name().equals(upperCaseValue)){
-                    return userType;
-                }
-            }
-
-            return null;
-        }
+//        public static UserType fromValue(String value){
+//            String upperCaseValue = value.toUpperCase();
+//
+//            for(UserType userType : UserType.values()){
+//                if(userType.name().equals(upperCaseValue)){
+//                    return userType;
+//                }
+//            }
+//
+//            return null;
+//        }
     }
 
     public enum NotSimple{
-        A("Some description for A", 1),
-        B("Some description for B", 2),
-        OK_200("Some description for C", 3);
+        A("Some description for A", 100),
+        B("Some description for B", 101),
+        OK_200("Some description for C", 102);
 
         private String description;
         private int i;
@@ -123,5 +122,6 @@ public class EnumExample {
         public int getI() {
             return i;
         }
+
     }
 }

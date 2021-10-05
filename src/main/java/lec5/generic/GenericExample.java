@@ -18,12 +18,8 @@ public class GenericExample {
 
         User[] users = {new User("email@ukr.net"), new User("another-email@gmail.com")};
 
-        //тут лише довжина books
-        System.out.println(books.length);
-
 //        Pair<User, Book> pair = getPair(books, users);
         Pair<User, Book> pair = getPair(books, users);
-
 
         Pair<Integer, Integer> testPair =  test();
 

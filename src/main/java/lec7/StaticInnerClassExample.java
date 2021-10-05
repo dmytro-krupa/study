@@ -4,6 +4,9 @@ public class StaticInnerClassExample {
     public static void main(String[] args) {
         A.B ab = new A.B();
 
+        ab.test();
+
+
     }
 
     static class A{

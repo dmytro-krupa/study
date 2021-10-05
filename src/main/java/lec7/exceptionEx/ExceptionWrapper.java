@@ -15,9 +15,15 @@ public class ExceptionWrapper {
         try {
             test1();
         } catch (ArithmeticException e){
-            throw e;
-//            throw new RuntimeException();
-//            throw new RuntimeException(e);
+//            throw e;
+//            throw new ArithmeticException();
+            throw new RuntimeException(e);
         }
     }
 }
+
+
+// KISS
+// DRY
+// YAGNI
+

@@ -5,14 +5,17 @@ public class LinkedListExample {
         Node node1 = new Node(7, null); //tail
         Node node2 = new Node(600, node1);
         Node node3 = new Node(-98, node2);
-        Node node4 = new Node(0, node3); //head
+        Node node4 = new Node(3, node3); //head
 
 
 
 
 
 
-        Queue queue = new LinkedList();
+        Queue queue = new LinkedList(node4);
+
+//        System.out.println(queue.get());
+
 
 //        queue.add(7);
 //        queue.add(600);
@@ -21,8 +24,8 @@ public class LinkedListExample {
 
 
 
-//        System.out.println(linkedList.size());
-        System.out.println(queue.get());
+        System.out.println(queue.size());
+//        System.out.println(queue.get());
 
 
     }

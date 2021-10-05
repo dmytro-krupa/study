@@ -6,8 +6,8 @@ public class ManyArgsExample {
         int[] array = {4};
 
 //        System.out.println(sum(4, 5));
-//        System.out.println(sum(2, 4, array));
         System.out.println(sum(3,2));
+        System.out.println(sum(2, 4, array));
         System.out.println(sum(3,2, 5,7,3,2,1,-3));
 
     }

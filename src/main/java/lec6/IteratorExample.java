@@ -6,6 +6,8 @@ import lec4.dataStructure.Node;
 import java.util.Iterator;
 
 public class IteratorExample {
+    //it - 21/22
+    //it - 13
     public static void main(String[] args) {
 
 

@@ -6,10 +6,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+//it - 21/22
+//it - 13
 
 public class ComparableAndComparatorExample {
     public static void main(String[] args) {
-        List<Car> cars = new ArrayList<>();
+        final List<Car> cars = new ArrayList<>();
 
         cars.add(new Car(1000, 2001, "A"));
         cars.add(new Car(7500, 2015, "B"));
@@ -24,13 +27,11 @@ public class ComparableAndComparatorExample {
     число < 0 коли this менший ніж параметр
  */
 
+        System.out.println(cars);
+//        System.out.println(cars.stream().sorted().collect(Collectors.toList()));
 
 
-
-
-        Collections.sort(cars, new CarYearComparator());
-
-
+        Collections.sort(cars);
         System.out.println(cars);
 
     }

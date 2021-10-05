@@ -62,7 +62,7 @@ public class SetObjectExample {
 
         @Override
         public String toString() {
-            return "Student{" +
+            return "{" +
                     "id=" + id +
                     ", name='" + name + '\'' +
                     '}';

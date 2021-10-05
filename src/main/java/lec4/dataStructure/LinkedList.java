@@ -56,8 +56,8 @@ public class LinkedList implements Queue{
             return 0;
         }
 
-        while (headPointer.getNext() != null){
-            headPointer = headPointer.getNext();
+        if(headPointer.getNext() != null){
+            head = head.getNext();
         }
 
         return headPointer.getValue();
