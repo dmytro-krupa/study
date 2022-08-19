@@ -41,11 +41,11 @@ public class SimpleMultiThExample {
         //======================================================
 
 //
-//        Thread thread1 = new Thread(new SimpleRunnable1());
-//        Thread thread2 = new Thread(new SimpleRunnable2());
-//        Thread thread3 = new Thread(new SimpleRunnable3());
-//
-//
+        Thread thread1 = new Thread(new SimpleRunnable1());
+        Thread thread2 = new Thread(new SimpleRunnable2());
+        Thread thread3 = new Thread(new SimpleRunnable3());
+
+
 //        thread1.start();
 //        thread2.start();
 //        thread3.start();

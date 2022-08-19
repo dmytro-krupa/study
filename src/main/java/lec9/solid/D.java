@@ -3,10 +3,10 @@ package lec9.solid;
 public class D {
 
     public static void main(String[] args) {
-        MySQLCrudRepository mySQLCrudRepository = new MySQLCrudRepository();
+        CrudRepository crudRepository = new MySQLCrudRepository();
         ApproveEmailSender emailSender = new ApproveEmailSender();
 
-        OrderProcessor orderProcessor = new OrderProcessor(mySQLCrudRepository, emailSender);
+        OrderProcessor orderProcessor = new OrderProcessor(crudRepository, emailSender);
 
         orderProcessor.process();
 

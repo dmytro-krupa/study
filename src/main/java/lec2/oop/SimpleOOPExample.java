@@ -5,11 +5,13 @@ import lec1.ArrayExample;
 public class SimpleOOPExample {
     public static void main(String[] args) {
 
-//        Person person = new Person();
-//
-//        person.setFirstName("igor");
-//
-//        System.out.println(person.getFirstName());
+        Person person = new Person();
+
+        person.setFirstName("Dmytro");
+        person.setLastName("Krupa");
+        person.setMiddleName("TEST");
+
+        System.out.println(person.getFullName());
 
 
 //    Student student = new Student();
@@ -61,18 +63,18 @@ public class SimpleOOPExample {
 
 //==================================
 
-        Student s1 = new Student();
-        Student s2 = new Student();
-        Student s3 = new Student();
-
-        System.out.println(s1.equals(s1));
-
-        System.out.println(s1.equals(s2));
-        System.out.println(s2.equals(s1));
-
-        System.out.println(s1.equals(s2));
-        System.out.println(s2.equals(s3));
-        System.out.println(s1.equals(s3));
+//        Student s1 = new Student();
+//        Student s2 = new Student();
+//        Student s3 = new Student();
+//
+//        System.out.println(s1.equals(s1));
+//
+//        System.out.println(s1.equals(s2));
+//        System.out.println(s2.equals(s1));
+//
+//        System.out.println(s1.equals(s2));
+//        System.out.println(s2.equals(s3));
+//        System.out.println(s1.equals(s3));
 
 
 

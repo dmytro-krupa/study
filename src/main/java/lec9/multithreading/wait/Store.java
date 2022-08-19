@@ -1,6 +1,8 @@
 package lec9.multithreading.wait;
 
 public class Store {
+
+    //СКИНУТИ СТАТТЮ по WAIT і по SOLID !!!
     private int product=0;
     public synchronized void get() {
         while (product<1) {

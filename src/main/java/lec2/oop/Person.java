@@ -3,7 +3,16 @@ package lec2.oop;
 public class Person {
     private String firstName;
     private String lastName;
-    private int yob;
+    private String middleName;
+    private int year;
+
+    public String getFullName(){
+        if(middleName == null || middleName.isEmpty()){
+            return firstName + " "  + lastName;
+        } else {
+            return firstName + " " + middleName + " " + lastName;
+        }
+    }
 
     public String getFirstName() {
         System.out.println("Some data");
@@ -23,15 +32,23 @@ public class Person {
     }
 
     public int getYob() {
-        return yob;
+        return year;
     }
 
     public void setYob(int yob) {
-        this.yob = yob;
+        this.year = yob;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     @Override
     public String toString() {
-        return firstName + " " + lastName + " " + yob;
+        return firstName + " " + lastName + " " + year;
     }
 }

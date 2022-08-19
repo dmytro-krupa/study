@@ -4,6 +4,7 @@ import practice.flat_company.flat.enumeration.WallMaterial;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.ToIntFunction;
 
 public class Wall extends Element{
 
@@ -16,7 +17,7 @@ public class Wall extends Element{
     public int getMeter2(){
 
         int doorsMeter2 = doors.stream().mapToInt(Door::getMeter2).sum();
-        int windowsMeter2 = windows.stream().mapToInt(Window::getMeter2).sum();
+        int windowsMeter2 = windows.stream().mapToInt(window -> window.getMeter2()).sum();
 
         return width * length - doorsMeter2 - windowsMeter2;
     }

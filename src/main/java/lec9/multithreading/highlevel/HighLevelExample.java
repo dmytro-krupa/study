@@ -7,10 +7,11 @@ import java.util.concurrent.Future;
 public class HighLevelExample {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
-        executor.submit(() -> {
-            String threadName = Thread.currentThread().getName();
-            System.out.println("Hello " + threadName);
-        });
+
+//        executor.submit(() -> {
+//            String threadName = Thread.currentThread().getName();
+//            System.out.println("Hello " + threadName);
+//        });
 
 
         try {
@@ -33,7 +34,8 @@ public class HighLevelExample {
 
             System.out.println("finish");
             System.out.println(x.get());
-//            System.out.println(x.get(1, TimeUnit.SECONDS));
+            System.out.println("finished x.get()");
+
         } catch (Exception e){
             e.printStackTrace();
         }

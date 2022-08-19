@@ -8,13 +8,17 @@ public class ArrayExample {
 
 //===================================================
 
-        int size = 2;
+        int size = 3;
 
-        int[] b = new int[1 + size];
+        int[] b = new int[4];
 
         b[0] = 5;
         b[1] = 50;
         b[2] = 500;
+
+
+
+        System.out.println(b.length);
 
 //        System.out.println(b[0]);
 //        System.out.println(b[1]);
@@ -40,10 +44,17 @@ public class ArrayExample {
         e[0] = new int[]{1,2,3};
         e[1] = new int[]{8};
 
-        System.out.println(e[0][0]);
-        System.out.println(e[0][1]);
-        System.out.println(e[0][2]);
-        System.out.println(e[1][0]);
+//        System.out.println(e[0][0]);
+//        System.out.println(e[0][1]);
+//        System.out.println(e[0][2]);
+//        System.out.println(e[1][0]);
+
+//===================================================
+
+
+
+
+
 
     }
 }

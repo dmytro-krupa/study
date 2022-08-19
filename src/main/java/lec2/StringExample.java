@@ -20,9 +20,9 @@ public class StringExample {
 
 //=====================================
 
-//        String a1 = "test";
-//        String a2 = new String("test");
-//
+        String a1 = "test";
+        String a2 = new String("test");
+
 //        System.out.println("a1.equals(a2) = " + a1.equals(a2));
 //        System.out.println("a1==a2 = " + (a1 == a2));
 //
@@ -41,6 +41,12 @@ public class StringExample {
 
 
 
+        int[] x = {1,2,3};
+
+        for(int i = 0; i < x.length; i++){
+            System.out.println(x[i]);
+        }
+
     }
 
 
@@ -48,6 +54,7 @@ public class StringExample {
 
 
     static String toUpperCase(String s){
+
         return s.toUpperCase();
     }
 }

@@ -15,6 +15,8 @@ public class O {
         double a;
         double b;
         double c;
+
+
     }
 
     public static class Manager{

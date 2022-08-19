@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class StreamExample {
     public static void main(String[] args) {
-        final User user1 = new User("firstName", "lastName", "email@ukr.net", 12, Collections.singletonList("someNote"));
+        final User user1 = new User("firstName", "lastName", "email@ukr.net", 82, Collections.singletonList("someNote"));
         final User user2 = new User("firstName2", "lastName2", "email2@ukr.net", 20, Collections.singletonList("someNote"));
         final User user3 = new User("firstName3", "lastName3", "email3@ukr.net", 67, Collections.singletonList("someNote"));
         final User user4 = new User("firstName4", "lastName4", "email4@ukr.net", 11, Collections.singletonList("someNote"));
@@ -35,6 +35,24 @@ public class StreamExample {
         userList.add(user11);
 
 
+     String x = userList.stream()
+                .distinct()                                   //нетермінальний метод
+                .filter(user -> user.getAge() >= 18)
+                .sorted((o1, o2) -> o1.getAge() > o2.getAge() ? 1 : -1)     //нетермінальний метод
+                .peek(user -> user.setEmail(user.getEmail() + "1"))             //нетермінальний метод
+//                .peek(e -> System.out.println(e))                           //нетермінальний метод
+                .limit(88)
+             .map(e -> e.getEmail())
+             .reduce((s1, s2) -> s1 + " " + s2).orElse("");
+
+
+        System.out.println(x);
+
+
+//        System.out.println(count);
+
+
+
 //        long userListFiltered = userList.stream()
 //                .distinct()
 //                .filter(user -> user.getAge() >= 18)
@@ -42,18 +60,10 @@ public class StreamExample {
 //
 //                .count();
 
-        User userListFiltered = userList.stream()
-                .distinct()
-                .filter(user -> user.getAge() >= 18)
-                .findAny()
-                .get();
-
-
-
 
 //                .mapToInt(user -> user.getAge())
 
-        System.out.println("TEST");
+//        System.out.println("TEST");
 
 //        System.out.println(userListFiltered.count());
 
@@ -66,7 +76,7 @@ public class StreamExample {
 
 
 
-        System.out.println(userListFiltered);
+//        System.out.println(userListFiltered);
 
     }
 }

@@ -7,7 +7,7 @@ public class ForExample {
 
         for (int i = 0; i < a.length; i++){
             if(a[i] == 3){
-//                break;
+                break;
             }
 
             if(a[i] == 3){
@@ -48,9 +48,14 @@ public class ForExample {
         int[] d = {100,200,300};
 
 
-        //read only
+//        read only
         for(int number : d){
-            System.out.println("Foreach: " + number);
+           number = 7;
+//            System.out.println(number);
+        }
+
+        for(int number : d){
+//            System.out.println("Foreach: " + number);
         }
 
         //=========================================
@@ -65,7 +70,28 @@ public class ForExample {
 //            System.out.println();
 //        }
 
+
+        char[] chars = {'t','t','p','t','l','t','y','t'};
+
+        int count = 0;
+
+        for(char c1 : chars){
+            if(c1 == 't')
+            count++;
+        }
+
+
+        String text = "Number of 't' = ";
+
+        StringBuilder builder = new StringBuilder();
+
+        String output = builder.append(text)
+                .append(count).toString();
+
+        System.out.printf( "Number of 't' = " + count);
+
+
+
+
     }
-
-
 }

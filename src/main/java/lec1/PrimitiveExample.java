@@ -7,7 +7,12 @@ public class PrimitiveExample {
 
         byte b1 = -128;
         byte b2 = 127;
+        byte b = 15;
         short s = 12767;
+
+        byte b3 = (byte) (b2 + b);
+
+//        System.out.println(b3);
 
 
         char c = '4';
@@ -23,13 +28,35 @@ public class PrimitiveExample {
 
 
 
+//        long b = 40000000000L;
+//        int a = (int) b;
+//
+//
+//        System.out.println(a);
+
+
+
+        int q = 4;
+        int w = 4;
+
+
+
+
+
 
 
         String s1 = "hello world";
+        String s3 = "hello world";
+        String s2 = new String("hello world");
+        String s4 = new String("hello world");
 
-        String s2 = new String("hello world s2");
+        if(s4.equals(s2)){
+            System.out.println("TRUE");
+        }
 
-        System.out.println(s2 + " TEST" + " 123");
+
+
+//        System.out.println(s2 + " TEST" + " 123");
 
 
 

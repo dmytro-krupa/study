@@ -24,18 +24,22 @@ public class OpExample {
 
         //=====================================
 
+        int x;
 
         boolean t = true;
         boolean f = false;
 
-//        System.out.println(t | f);
-//        System.out.println("======");
-//        System.out.println(true1() | false1());
-//        System.out.println("======");
-//        System.out.println(true1() || false1());
-//        System.out.println("======");
-//        System.out.println("======");
-//        System.out.println(a | b); //побітова операція
+        System.out.println(t | f);
+        System.out.println("======");
+
+        int z = 44+22;
+
+        System.out.println(true1() | false1());
+        System.out.println("======");
+        System.out.println(true1() || false1());
+        System.out.println("======");
+        System.out.println("======");
+        System.out.println(a | b); //побітова операція
 
         // &    &&
 
@@ -49,21 +53,19 @@ public class OpExample {
         boolean isRainingNow = isRain && !isSun && isHot;
 
         if (isRainingNow) {
-//            System.out.println("Дощить !!!");
+            System.out.println("Дощить !!!");
         } else {
-//            System.out.println("Погана погода !!!");
+//            System.out.println("Хороша погода !!!");
         }
 
 
         if (isRainingNow) {
             System.out.println("Дощить !!!");
-        } else if (true){
+        } else if (true) {
 
         } else {
 
         }
-
-
 
 
     }

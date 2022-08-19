@@ -3,84 +3,45 @@ package lec9.solid;
 public class L {
 
     public static void main(String[] args) {
-        Vehicle vehicle = new Car();
+        A a = new A();
+//        A a = new B();
 
-        vehicle.start(40);
-//        vehicle.turnLeft();
-//        vehicle.turnRight();
-        vehicle.stop();
+
+        a.go();
+        a.go();
+        a.go();
+
+        a.something();
+
+        a.go();
+        a.go();
+        a.go();
+        a.go();
+        a.go();
     }
 
-    interface Vehicle {
-        void start(int speed);
-        void stop();
-    }
+    static class A {
+        protected boolean x = false;
 
-    interface AnyDirectionVehicle extends Vehicle{
-        void turnRight();
-        void turnLeft();
-    }
-
-    interface BiDirectionVehicle extends  Vehicle{}
-
-//    static class Vehicle{
-//        int speed;
-//
-//        void start(int speed){
-//            this.speed = speed;
-//        }
-//        void stop(){
-//            this.speed = 0;
-//        }
-//
-//        void turnRight(){
-//            this.speed = this.speed / 2;
-//        }
-//        void turnLeft(){
-//            this.speed = this.speed / 2;
-//        }
-//    }
-
-    static class Car implements AnyDirectionVehicle{
-        int speed;
-        public void start(int speed){
-            this.speed = speed;
-        }
-        public void stop(){
-            this.speed = 0;
+        public void go() {
+            System.out.println("go");
         }
 
-        public void turnRight(){
-            this.speed = this.speed / 2;
-        }
-        public void turnLeft(){
-            this.speed = this.speed / 2;
-        }
-    }
-    static class Bus implements AnyDirectionVehicle{
-        int speed;
-        public void start(int speed){
-            this.speed = speed;
-        }
-        public void stop(){
-            this.speed = 0;
-        }
-
-        public void turnRight(){
-            this.speed = this.speed / 2;
-        }
-        public void turnLeft(){
-            this.speed = this.speed / 2;
-        }
-    }
-    static class Train implements BiDirectionVehicle{
-        int speed;
-        public void start(int speed){
-            this.speed = speed;
-        }
-        public void stop(){
-            this.speed = 0;
+        public void something(){
+            x = true;
         }
     }
 
+    static class B extends A{
+
+        @Override
+        public void go() {
+
+            if(x){
+                throw new ArithmeticException();
+            }
+            System.out.println("stop");
+        }
+
+    }
 }

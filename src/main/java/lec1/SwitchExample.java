@@ -1,7 +1,13 @@
 package lec1;
 
+
+import lec2.AccessExample;
+
 public class SwitchExample {
     public static void main(String[] args) {
+
+        double x = 0.4;
+        System.out.println(x);
 
         int a = 5;
 
@@ -17,6 +23,8 @@ public class SwitchExample {
             default:
                 System.out.println("default");
         }
+
+
 
     }
 }
