@@ -25,9 +25,9 @@ public class MapExample {
         treeMap.put("3","d");
         treeMap.put("1","c");
 //
-//        System.out.println("hashMap = " + hashMap);
-//        System.out.println("linkedHashMap = " + linkedHashMap);
-//        System.out.println("treeMap = " + treeMap);
+        System.out.println("linkedHashMap = " + linkedHashMap);
+        System.out.println("hashMap = " + hashMap);
+        System.out.println("treeMap = " + treeMap);
 
 
         List<Car> cars = new ArrayList<>();
@@ -36,11 +36,17 @@ public class MapExample {
         cars.add(new Car(35000, 2007, "C"));
         cars.add(new Car(7500, 2005, "B"));
 
-        Map<Car, Integer> carMap = new TreeMap<>();
+        Map<Car, Integer> carMap = new HashMap<>();
 
         carMap.put(cars.get(0), cars.get(0).getPrice());
         carMap.put(cars.get(1), cars.get(1).getPrice());
         carMap.put(cars.get(2), cars.get(2).getPrice());
+
+
+
+        for(Map.Entry<Car, Integer> entry: carMap.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
 
         System.out.println("carMap = " + carMap);
 

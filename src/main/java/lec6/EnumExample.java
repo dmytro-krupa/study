@@ -1,10 +1,6 @@
 package lec6;
 
 
-import javacl.SimpleEnum;
-import java.io.Serializable;
-
-
 public class EnumExample {
     public static void main(String[] args) {
 
@@ -45,25 +41,30 @@ public class EnumExample {
 
         NotSimple notSimple = NotSimple.A;
 
-        System.out.println("notSimple = " + notSimple.getDescription());
+//        System.out.println("notSimple = " + NotSimple.A.getDescription());
 
 //        notSimple.setDescription("dfff");
 
-        System.out.println("notSimple = " + NotSimple.A.getDescription());
+//        System.out.println("notSimple = " + NotSimple.A.getDescription());
 
         //========================================
 
         User user = new User();
-
         user.userType = UserType.MANAGER;
 
 
 
         switch (user.userType){
-            case USER -> {System.out.println(" 1 : USER");}
+            case USER -> System.out.println(" 1 : USER");
             case MANAGER -> System.out.println(" 1 : MANAGER");
             case ADMIN -> System.out.println(" 1 : ADMIN");
+            default -> System.out.println("default");
         }
+
+
+
+
+        //=========================================
     }
 
     public static class User{
@@ -75,7 +76,7 @@ public class EnumExample {
         void q();
     }
     public enum WrongEnum implements A{
-        ;
+        T;
 
         @Override
         public void q() {
@@ -89,17 +90,17 @@ public class EnumExample {
         MANAGER;
 
 
-//        public static UserType fromValue(String value){
-//            String upperCaseValue = value.toUpperCase();
-//
-//            for(UserType userType : UserType.values()){
-//                if(userType.name().equals(upperCaseValue)){
-//                    return userType;
-//                }
-//            }
-//
-//            return null;
-//        }
+        public static UserType fromValue(String value){
+            String upperCaseValue = value.toUpperCase();
+
+            for(UserType userType : UserType.values()){
+                if(userType.name().equals(upperCaseValue)){
+                    return userType;
+                }
+            }
+
+            return null;
+        }
     }
 
     public enum NotSimple{

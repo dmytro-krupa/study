@@ -4,7 +4,7 @@ public class D {
 
     public static void main(String[] args) {
         CrudRepository crudRepository = new MySQLCrudRepository();
-        ApproveEmailSender emailSender = new ApproveEmailSender();
+        EmailSender emailSender = new ApproveEmailSender();
 
         OrderProcessor orderProcessor = new OrderProcessor(crudRepository, emailSender);
 

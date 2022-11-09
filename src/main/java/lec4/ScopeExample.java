@@ -7,6 +7,8 @@ public class ScopeExample {
 //        System.out.println(x);
 
         int x = 10;
+
+
         {
 //            int x = 10;
             // тут змінна x доступна
@@ -14,6 +16,7 @@ public class ScopeExample {
             System.out.println(x);
 //
         }
+
 
         // тут змінна x недоступна
         // змінна x "живе" лише у області відокремленій дужками
@@ -28,9 +31,9 @@ public class ScopeExample {
         if(x == 5){
             y = 9;
         } else {
+            int z = 9;
             y = 2;
         }
-
 
         System.out.println(y);
     }

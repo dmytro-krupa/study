@@ -1,5 +1,6 @@
 package lec9.multithreading.highlevel;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -15,22 +16,24 @@ public class HighLevelExample {
 
 
         try {
-           Future<Integer> x = executor.submit(() -> {
-               String threadName = Thread.currentThread().getName();
+            Example get123 = new Example();
 
-               System.out.println("Hello " + threadName);
+            Future<Integer> x = executor.submit(() -> {
+                String threadName = Thread.currentThread().getName();
 
-               Thread.sleep( 5000);
-               System.out.println("Bye " + threadName);
+                System.out.println("Hello " + threadName);
 
-               return 123;
-           });
+                Thread.sleep( 5000);
+                System.out.println("Bye " + threadName);
+
+                return 123;
+            });
 
             Thread.sleep( 1000);
             System.out.println("after 1 sec");
 
 
-            Thread.sleep( 1000);
+            Thread.sleep( 5000);
 
             System.out.println("finish");
             System.out.println(x.get());
@@ -40,8 +43,8 @@ public class HighLevelExample {
             e.printStackTrace();
         }
 
-
-
+//
+//
         try{
             executor.shutdown();
         } catch (Exception e){
@@ -50,5 +53,19 @@ public class HighLevelExample {
             executor.shutdownNow();
         }
 
+    }
+
+    static class Example implements Callable<Integer>{
+        @Override
+        public Integer call() throws Exception {
+            String threadName = Thread.currentThread().getName();
+
+            System.out.println("Hello " + threadName);
+
+            Thread.sleep( 5000);
+            System.out.println("Bye " + threadName);
+
+            return 123;
+        }
     }
 }

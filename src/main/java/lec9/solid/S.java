@@ -36,8 +36,17 @@ public class S {
         }
     }
 
+    static class AccessManager{
+        public boolean hasAccessToFile(String fileName, User user){
+            return false;
+        }
+        public boolean hasAccessToFile(String fileName, Job job){
+            return false;
+        }
+    }
+
     static enum Access{
-        A1,     //top access
+        A1,
         A2,
         B1,
         B2,

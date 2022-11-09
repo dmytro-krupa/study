@@ -17,7 +17,7 @@ public class ExceptionWrapper {
         } catch (ArithmeticException e){
 //            throw e;
 //            throw new ArithmeticException();
-            throw new RuntimeException(e);
+            throw new RuntimeException("frfrf", e);
         }
     }
 }

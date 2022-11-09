@@ -1,7 +1,78 @@
 package lec4.dataStructure;
 
-public class LinkedList implements Queue{
+public class LinkedList implements Stack{
     protected Node head;
+
+    protected LinkedList() {
+        this.head = null;
+    }
+
+    public static LinkedList emptyStack(){
+        return new LinkedList();
+    }
+
+    @Override
+    public void push(int value) {
+        Node newNode = new Node(value);
+
+        if(head == null) {
+            head = newNode;
+            return;
+        } else {
+            Node last = getLast();
+            last.setNext(newNode);
+        }
+    }
+
+    @Override
+    public int pop() {
+        if(head == null){
+            return -1;
+        }
+
+        if(head.getNext() == null){
+            Node temp = head;
+            head = null;
+            return temp.getValue();
+        }
+
+        Node secondLast = getSecondLast();
+
+        Node last = secondLast.getNext();
+        secondLast.setNext(null);
+
+
+        return last.getValue();
+    }
+
+    private Node getLast(){
+        Node pointer = this.head;
+
+        if(pointer.getNext() == null){
+            return pointer;
+        }
+
+        while (pointer.getNext() != null){
+            pointer = pointer.getNext();
+        }
+
+        return pointer;
+    }
+
+    private Node getSecondLast(){
+        Node pointer = this.head;
+
+        if(pointer.getNext().getNext() == null){
+            return pointer;
+        }
+
+        while (pointer.getNext().getNext() != null){
+            pointer = pointer.getNext();
+        }
+
+        return pointer;
+    }
+
 
     /*
     Теми:
@@ -10,6 +81,33 @@ public class LinkedList implements Queue{
         3. Структури даних: дерево, стек==LIFO, черга==FIFO
         4. Складність алгоритмів (коду)
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     TASKS:
         1. remove this constructor
@@ -22,60 +120,4 @@ public class LinkedList implements Queue{
 
      */
 
-    public LinkedList(Node head) {
-        this.head = head;
-    }
-
-
-    public LinkedList() {
-    }
-
-    @Override
-    public int size(){
-        int size = 0;
-
-        if (head == null){
-            return size;
-        }
-
-        Node headPointer = head;
-
-        while (headPointer != null){
-            ++size;
-            headPointer = headPointer.getNext();
-        }
-
-        return size;
-    }
-
-    @Override
-    public int get(){
-        Node headPointer = head;
-
-        if (head == null){
-            return 0;
-        }
-
-        if(headPointer.getNext() != null){
-            head = head.getNext();
-        }
-
-        return headPointer.getValue();
-    }
-
-    @Override
-    public void add(int value) {
-        //потрібно замінити існуючий head
-        //створити новий об'єкт Node
-    }
-
-    @Override
-    public void delete(int index) {
-
-    }
-
-    @Override
-    public void clear() {
-
-    }
 }

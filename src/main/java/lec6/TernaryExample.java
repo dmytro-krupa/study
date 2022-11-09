@@ -1,8 +1,6 @@
 package lec6;
-
+//done
 public class TernaryExample {
-    //it - 21/22
-    //it - 13
 
     public static void main(String[] args) {
         int age = 15;
@@ -12,9 +10,9 @@ public class TernaryExample {
         //=============================================
 
         if(age >= 18) {
-            result = "You can do that";
-        } else {
-            result = "You can't do that";
+                result = "You can do that";
+            } else {
+                result = "You can't do that";
         }
 
 

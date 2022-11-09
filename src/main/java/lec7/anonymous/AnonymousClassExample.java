@@ -8,14 +8,35 @@ import java.util.ListIterator;
 public class AnonymousClassExample {
     public static void main(String[] args) {
 
-        Button button = new Button();
+        int x = 4;
 
-//        button.setClickAction(new CustomAction());
+
+
+        Button run = new Button();
+        Button debug = new Button();
+
+//        button.setClickAction(new RunAction());
 //
+
+        run.setClickAction((i,o) -> {
+            System.out.println(x);
+            System.out.println("Run button");
+        });
+
+        debug.setClickAction((i,o) -> System.out.println("Debug button"));
+
+
+
+
+
+
+
+
+
 //
 //        button.setClickAction(new Action() {
 //            @Override
-//            public void invoke() {
+//            public void invoke(int i, int o) {
 //                System.out.println("from anonymous class");
 //            }
 //
@@ -25,19 +46,19 @@ public class AnonymousClassExample {
 
         int a = 4;
 
-        button.setClickAction(    (b, o) -> System.out.println(b)    );
+//        button.setClickAction(    (b, o) -> System.out.println(b)    );
 
 //        A a = new A();
 //        a.action("SOME TEXT 2").invoke();
     }
 
 //
-//    static class CustomAction implements Action{
-//        @Override
-//        public void invoke() {
-//            System.out.println("from CustomAction class");
-//        }
-//    }
+    static class RunAction implements Action{
+            @Override
+            public void invoke(int i, int o) {
+                System.out.println("App is running");
+    }
+}
 
 //    static class A{
 //        public Action action(final String printIt){

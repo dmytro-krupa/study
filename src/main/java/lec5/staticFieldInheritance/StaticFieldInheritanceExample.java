@@ -6,7 +6,8 @@ public class StaticFieldInheritanceExample {
 
         Parent.a = 663;
 
-        System.out.println("Child.a " + Child.a);
+
+        System.out.println("Child.a " + child.a);
         System.out.println("Child.b " + Child.b);
         System.out.println("Parent.a " + Parent.a);
 

@@ -19,10 +19,10 @@ public final class ConstantClass {
 
     public static class UrlConstants{
         public static class Admin{
-            public static final String ADMIN_URL = "ADMIN_URL";
+            public static final String URL = "ADMIN_URL";
         }
         public static class Manager{
-            public static final String MANAGER_URL = "MANAGER_URL";
+            public static final String URL = "MANAGER_URL";
         }
     }
 

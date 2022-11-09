@@ -7,12 +7,17 @@ public class EqualsAndHashcode {
     static class A{
         private int a = 5;
         private String b = "fgt5";
-
+        public void q(){
+            System.out.println("Q");
+        }
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
+
             if (o == null || getClass() != o.getClass()) return false;
+
             A a1 = (A) o;
+
             return a == a1.a &&
                     b.equals(a1.b);
         }
@@ -29,12 +34,12 @@ public class EqualsAndHashcode {
                     ", b='" + b + '\'' +
                     '}';
         }
-
     }
 
     public static void main(String[] args) {
-        A a = new A();
+        Object a = new A();
 
-        System.out.println(a);
+
+        System.out.println(a.toString());
     }
 }

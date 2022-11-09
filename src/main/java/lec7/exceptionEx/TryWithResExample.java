@@ -11,16 +11,16 @@ public class TryWithResExample {
     public static void main(String[] args) {
 
 
-//        System.out.println(input1());
+        System.out.println(input1());
 //        System.out.println(input2());
 //
 
-
-        try (A a = new A(); A b = new A()){
-            a.read();
-        } catch (IOException e){
-            System.out.println("catch IOException !!!!");
-        }
+//
+//        try (A a = new A(); A b = new A(); String s = "ref"){
+//            a.read();
+//        } catch (IOException e){
+//            System.out.println("catch IOException !!!!");
+//        }
 
 
 //

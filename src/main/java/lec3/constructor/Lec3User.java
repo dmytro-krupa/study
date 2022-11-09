@@ -8,12 +8,13 @@ public class Lec3User extends SuperUser{
     public Lec3User() {
         //завжди неявно викликається
 //        super();
+//        super(3);
         this("default name", 18);
     }
 
     public Lec3User(String name, int age) {
         //завжди неявно викликається
-        //super();
+//        super();
         super(age);
 
         this.name = name;

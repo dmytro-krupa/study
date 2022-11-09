@@ -7,6 +7,9 @@ public class InnerClassExample {
     }
 
     void test(){
+
+
+
         A a = new A();
 
         A.B b1 = a.new B();
@@ -27,15 +30,13 @@ public class InnerClassExample {
 
         private int x = 1;
         private int z = 2;
-//        private static int s = 2;
+        private static int s = 2;
 
 //        public static A.B getB(){
         public A.B getB(){
 //            return new A().new B();
             return new B();
         }
-
-
 
         private class B{
             //завжди має посилання на об'єкт зовнішнього класу
@@ -44,7 +45,7 @@ public class InnerClassExample {
             public void testInner(){
                 System.out.println(x);
                 System.out.println(z);
-//                System.out.println(s);
+                System.out.println(s);
                 System.out.println(A.this.z);
             }
 

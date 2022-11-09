@@ -3,8 +3,8 @@ package lec9.solid;
 public class L {
 
     public static void main(String[] args) {
-        A a = new A();
-//        A a = new B();
+//        A a = new A();
+        A a = new B();
 
 
         a.go();
@@ -40,7 +40,7 @@ public class L {
             if(x){
                 throw new ArithmeticException();
             }
-            System.out.println("stop");
+            System.out.println("go");
         }
 
     }

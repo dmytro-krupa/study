@@ -1,18 +1,27 @@
 package lec4;
+
+import java.io.Serializable;
+
 //done
 public class CastExample {
     public static void main(String[] args) {
 
 
 
-        A a = new A();
-        B b = new B();
+        A a = new B();
 
 
-        a = b;
+//        a = b;
+
+
+        if(a instanceof Object) {
+            System.out.println(true);
+        }
+
+
     }
 
-    static class A{}
-    static class B extends A{}
+    static class A implements Cloneable{}
+    static class B extends A implements Serializable {}
 
 }

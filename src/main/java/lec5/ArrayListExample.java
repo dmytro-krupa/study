@@ -8,9 +8,12 @@ public class ArrayListExample {
     public static void main(String[] args) {
 
 
-        List<String> list = new ArrayList<>(30);
+        List<String> list = new ArrayList<>(2000);
 
         list.add("some");
+        list.add("text");
+        list.add("text");
+        list.add("text");
         list.add("text");
         list.add("is");
         list.add("in");

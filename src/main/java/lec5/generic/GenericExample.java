@@ -1,11 +1,9 @@
 package lec5.generic;
 
 
-import lec2.OOPExample;
 import lec2.oop.User;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class GenericExample {
     public static void main(String[] args) {

@@ -12,6 +12,8 @@ public class InterfaceExample {
 //
         System.out.println(process.invoke());
 
+
+
         Process.staticLog();
 
 

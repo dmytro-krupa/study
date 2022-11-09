@@ -23,6 +23,10 @@ public class Kia extends Car{
         this.engine = engine;
     }
 
+    public void createEngine(boolean isGoodEngine){
+        this.engine = new Engine();
+    }
+
     public Driver getDriver() {
         return driver;
     }

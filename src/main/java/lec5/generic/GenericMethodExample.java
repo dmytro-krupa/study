@@ -9,8 +9,7 @@ public class GenericMethodExample {
         test(1);
     }
 
-    public static <T> T test(T t){
+    public static <T> void test(T t){
         System.out.println(t.getClass().getTypeName());
-        return t;
     }
 }

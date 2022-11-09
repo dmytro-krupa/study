@@ -36,6 +36,8 @@ public class Car implements Comparable<Car> , Iterable<Car>{
         return 0;
     }
 
+    //this.compareTo(car)
+
     @Override
     public int compareTo(Car car) {
         if (this.price > car.price) {

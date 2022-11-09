@@ -10,13 +10,15 @@ public class Parent {
     }
 
     //3
+    public String name = "Parent name";
+
+    //3.1
     {
         name = "";
         System.out.println("Parent non-static block");
     }
 
-    //3
-    public String name = "Parent name";
+
 
     //4
     public Parent() {

@@ -15,7 +15,7 @@ public class ComparableAndComparatorExample {
         final List<Car> cars = new ArrayList<>();
 
         cars.add(new Car(1000, 2001, "A"));
-        cars.add(new Car(7500, 2015, "B"));
+        cars.add(new Car(7500, 2000, "B"));
         cars.add(new Car(3500, 2008, "C"));
 
 /*
@@ -27,11 +27,13 @@ public class ComparableAndComparatorExample {
     число < 0 коли this менший ніж параметр
  */
 
-        System.out.println(cars);
+//        System.out.println(cars);
 //        System.out.println(cars.stream().sorted().collect(Collectors.toList()));
 
 
-        Collections.sort(cars);
+        Collections.sort(cars, new CarYearComparator());
+
+
         System.out.println(cars);
 
     }

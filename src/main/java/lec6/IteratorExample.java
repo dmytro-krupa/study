@@ -6,18 +6,16 @@ import lec4.dataStructure.Node;
 import java.util.Iterator;
 
 public class IteratorExample {
-    //it - 21/22
-    //it - 13
     public static void main(String[] args) {
 
 
-        Node node1 = new Node(7, null); //tail
-        Node node2 = new Node(600, node1);
-        Node node3 = new Node(-98, node2);
-        Node node4 = new Node(0, node3); //head
+        IterableLinkedList linkedList = new IterableLinkedList();
 
+        linkedList.push(5);
+        linkedList.push(3);
+        linkedList.push(2);
+        linkedList.push(4);
 
-        IterableLinkedList linkedList = new IterableLinkedList(node4);
 
         for(int value : linkedList){
             System.out.println(value);
@@ -25,8 +23,8 @@ public class IteratorExample {
     }
 
     public static class IterableLinkedList extends LinkedList implements Iterable<Integer>{
-        public IterableLinkedList(Node head) {
-            super(head);
+        public IterableLinkedList() {
+
         }
 
         @Override

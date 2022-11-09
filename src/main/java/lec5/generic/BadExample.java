@@ -12,7 +12,12 @@ public class BadExample {
         list.add(111);
 
 
+        if(list.get(0) instanceof String){
+
+        }
+
+
         System.out.println(list.get(0));
-        System.out.println(list.get(1) );
+        System.out.println(list.get(1));
     }
 }

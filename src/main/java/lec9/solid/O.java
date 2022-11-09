@@ -1,7 +1,9 @@
 package lec9.solid;
 
 public class O {
-    public static class GeometricFigure{}
+    public static abstract class GeometricFigure{
+//        abstract double getArea();
+    }
 
     public static class Square extends GeometricFigure{
         double a;
@@ -15,8 +17,6 @@ public class O {
         double a;
         double b;
         double c;
-
-
     }
 
     public static class Manager{
