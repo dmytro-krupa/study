@@ -5,7 +5,9 @@ import lec15.factory.toys.House;
 
 public class FactoryMain {
     public static void main(String[] args) {
-        ToyFactory factory = new WoodFactory();
+        ToyFactory factory = new PlasticFactory();
+        //List<String> list = new ArrayList<>();
+        //List<String> list = new LinkedList<>();
 
 
 

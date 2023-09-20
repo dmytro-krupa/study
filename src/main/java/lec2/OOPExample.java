@@ -28,14 +28,15 @@ public class OOPExample {
         B b = new B(5);
         A a = b;
 
-        C c = new C(2);
+//        C c = new C(2);
 
-        a = c;
+//        a = c;
+
+        System.out.println(((A)b).a);
+        System.out.println(a.a);
 
 
-
-
-        System.out.println(a instanceof C);
+//        System.out.println(a instanceof C);
 
 
 

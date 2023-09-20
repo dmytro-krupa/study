@@ -10,4 +10,9 @@ public class SingletonMain {
         System.out.println(singleton.value);
         System.out.println(anotherSingleton.value);
     }
+
+    /*
+    Андрій Будай
+    Паттерни - просто як двері
+     */
 }

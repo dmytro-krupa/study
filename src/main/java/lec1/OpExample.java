@@ -41,7 +41,7 @@ public class OpExample {
         System.out.println("======");
         System.out.println(a | b); //побітова операція
 
-        // &    &&
+        // &    |
 
         // && i || - скорочені логічні оператори. Якщо результат ясний - пришвидшують роботу програми
 
@@ -64,7 +64,7 @@ public class OpExample {
         } else if (true) {
 
         } else {
-
+            int y = 4;
         }
 
 

@@ -1,5 +1,4 @@
 package lec15.factory.toys;
 
-public interface Car {
-   String getName();
+public interface Car extends Toy{
 }

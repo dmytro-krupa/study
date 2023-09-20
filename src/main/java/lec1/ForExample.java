@@ -1,21 +1,21 @@
-package lec2;
+package lec1;
 
 public class ForExample {
     public static void main(String[] args) {
 
         int[] a = {1,2,3,4,5,6,7};
-
-        for (int i = 0; i < a.length; i++){
-            if(a[i] == 3){
-                break;
-            }
-
-            if(a[i] == 3){
-//                continue;
-            }
-
+//
+//        for (int i = 0; i < a.length; i++){
+//            if(a[i] == 3){
+//                break;
+//            }
+//
+//            if(a[i] == 3){
+////                continue;
+//            }
+//
 //            System.out.println(a[i]);
-        }
+//        }
 
         //=========================================
 
@@ -50,9 +50,16 @@ public class ForExample {
 
 //        read only
         for(int number : d){
-           number = 7;
-//            System.out.println(number);
+            number = 7;
+            System.out.println(number);
         }
+
+        for(int x : d){
+            System.out.println(x);
+        }
+
+
+        //           number = 7;
 
         for(int number : d){
 //            System.out.println("Foreach: " + number);
@@ -61,14 +68,14 @@ public class ForExample {
         //=========================================
 
 
-//        int[][] x = {{10,2},{20},{30}};
-//
-//        for(int i = 0; i < x.length; i++){
-//            for (int j = 0; j < x[i].length; j++){
-//                System.out.print(x[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
+        int[][] x = {{10,2},{20},{30}};
+
+        for(int i = 0; i < x.length; i++){
+            for (int j = 0; j < x[i].length; j++){
+                System.out.print(x[i][j] + " ");
+            }
+            System.out.println();
+        }
 
 
         char[] chars = {'t','t','p','t','l','t','y','t'};
@@ -88,6 +95,10 @@ public class ForExample {
         String output = builder.append(text)
                 .append(count).toString();
 
-        System.out.printf( "Number of 't' = " + count);
+//        System.out.printf( "Number of 't' = " + count);
+
+
+
+
     }
 }

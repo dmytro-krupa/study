@@ -2,6 +2,12 @@ package lec1;
 
 public class ArrayExample {
     public static void main(String[] args) {
+
+        int[] test = new int[10];
+
+
+
+
         int[] a = {1,2,3};
 
 //        System.out.println(a[3]);
@@ -18,7 +24,8 @@ public class ArrayExample {
 
 
 
-        System.out.println(b.length);
+//        System.out.println("b[3] = " + b[3]);
+//        System.out.println(b.length);
 
 //        System.out.println(b[0]);
 //        System.out.println(b[1]);
@@ -30,12 +37,12 @@ public class ArrayExample {
                 {30}
         };
 
-//        System.out.println(c[0][0]);
+        System.out.println(c[0][0]);
 
 //===================================================
         int[][] d = {{10,2},{20},{30}};
 
-//        System.out.println(d[1][0]);
+        System.out.println(d[1][0]);
 
 //===================================================
 

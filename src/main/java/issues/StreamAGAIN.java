@@ -25,10 +25,13 @@ public class StreamAGAIN {
 
         //=============================================
 
+        String DEFAULT_NAME = "default";
+
+        System.out.println("User was created");
 
         List<Product> result = productList.stream()
                 .map(e -> {
-                    e.setName("9");
+                    e.setName("");
                     return e;
                 })
                 .peek(e -> {
