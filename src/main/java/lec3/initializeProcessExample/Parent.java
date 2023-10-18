@@ -4,7 +4,7 @@ public class Parent {
     //1
     public static int a = 10;
 
-    //2
+    //2.1
     static {
         System.out.println("Parent static block");
     }

@@ -8,7 +8,7 @@ public class Child extends Parent {
     //5
     public String name = "Child name";
 
-    //2
+    //2.2
     static {
         System.out.println("Child static block");
     }

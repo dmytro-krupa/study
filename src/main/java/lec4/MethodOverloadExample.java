@@ -11,19 +11,6 @@ public class MethodOverloadExample {
     }
 
 
-    class User{}
-
-    void updateUser(User user, boolean isEditedByAdmin){}
-
-    void updateUser(User user){
-        updateUser(user, false);
-    }
-
-
-
-
-
-
     static void f(){
         System.out.println("void f()");
     }

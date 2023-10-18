@@ -21,7 +21,7 @@ public class ScopeExample {
         // тут змінна x недоступна
         // змінна x "живе" лише у області відокремленій дужками
 
-//        System.out.println(x);
+        System.out.println(x);
 
 
 

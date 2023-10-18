@@ -2,6 +2,7 @@ package lec4.dataStructure;
 
 public class LinkedList implements Stack{
     protected Node head;
+    protected Node tail;
 
     protected LinkedList() {
         this.head = null;

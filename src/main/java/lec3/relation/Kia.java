@@ -1,7 +1,5 @@
 package lec3.relation;
 
-import java.time.LocalDateTime;
-
 //is-a
 public class Kia extends Car{
 
