@@ -1,8 +1,6 @@
 package lec5.generic;
 
-import lec2.oop.User;
-
-import java.awt.*;
+import lec2.oop_2022.User;
 
 public class GenericMethodExample {
     public static void main(String[] args) {

@@ -1,30 +1,24 @@
 package lec1;
 
+import lec6.collection_example.User;
+
+import java.math.BigDecimal;
+
 public class PrimitiveExample {
     public static void main(String[] args) {
+
         int i = 53;
-
-
-
         long l = 53333333333333L;
 
-        byte b1 = -128;
-        byte b2 = 122;
         byte b = 125;
-        short s = 12767;
+      //  short s = 12767;
 
-        byte b3 = (byte) (b2 + b); // 247
-
-        System.out.println("b3: " + b3);
-
+//        float f = 4.6654335432f;
+        double d = 4.6654335432;
 
         char c = '4';
 
-
         boolean boo = true;
-
-        float f = 4.6654335432f;
-        double d = 4.6654335432;
 
 
 
@@ -37,19 +31,16 @@ public class PrimitiveExample {
 
 
 
-//        long b = 40000000000L;
-//        int a = (int) b;
-//
-//
+        long longVar = 400000000000L;
+        int a = (int) longVar;
+
+
 //        System.out.println(a);
 
 
 
-        int q = 4;
+        var q = 4l;
         int w = 4;
-
-
-
 
 
 
@@ -62,22 +53,25 @@ public class PrimitiveExample {
 
         String s1 = "hello world";
         String s3 = "hello world";
+
         String s2 = new String("hello world");
         String s4 = new String("hello world");
 
-
-        if(s1 == s3){
+//        if(s1.equals(s4)){
 //            System.out.println("TRUE");
-        }
-
-
-        System.out.printf("hello %s world %s etgpoe", "my");
-
-
+//        } else {
+//            System.out.println("FALSE");
+//        }
 
 
 
-
-
+//
+//        int number = 5;
+//        String string = "5";
+//
+//        User user = new User("test1", "test");
+//
+//        System.out.println(user);
     }
+
 }

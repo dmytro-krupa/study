@@ -5,13 +5,17 @@ public class OpExample {
         int a = 5;
 //замінити на int для цілочисельної арифметики
         int b = 2;
-//
+
 //        System.out.println("a + b = " + (a + b));
 //        System.out.println("a - b = " + (a - b));
-//        System.out.println("a / b = " + (a / b));
+//        System.out.println("a / b = " + ((double)a / b));
 //        System.out.println("a * b = " + (a * b));
 //        System.out.println("a % b = " + (a % b));
-
+//
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
 
         //=====================================
 
@@ -24,7 +28,9 @@ public class OpExample {
 
         //=====================================
 
-        int x;
+        //неініціалізована змінна
+        int x = 4;
+
 
         boolean t = true;
         boolean f = false;
@@ -32,7 +38,6 @@ public class OpExample {
         System.out.println(t | f);
         System.out.println("======");
 
-        int z = 44+22;
 
         System.out.println(true1() | false1());
         System.out.println("======");

@@ -4,7 +4,7 @@ public class D {
 
     public static void main(String[] args) {
         CrudRepository crudRepository = new MySQLCrudRepository();
-        EmailSender emailSender = new ApproveEmailSender();
+        EmailSender emailSender = new JavaEmailSender();
 
         OrderProcessor orderProcessor = new OrderProcessor(crudRepository, emailSender);
 
@@ -45,7 +45,7 @@ public class D {
         void send();
     }
 
-    static class ApproveEmailSender implements EmailSender{
+    static class JavaEmailSender implements EmailSender{
         public void send(){}
     }
 }

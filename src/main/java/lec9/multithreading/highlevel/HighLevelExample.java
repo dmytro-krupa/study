@@ -6,42 +6,45 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class HighLevelExample {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         ExecutorService executor = Executors.newFixedThreadPool(5);
 
 //        executor.submit(() -> {
+//            try {
+//                Thread.sleep(5000);
+//            } catch (Exception e){
+//
+//            }
+//
 //            String threadName = Thread.currentThread().getName();
 //            System.out.println("Hello " + threadName);
 //        });
 
+//        System.out.println("after submit");
 
-        try {
-            Example get123 = new Example();
+        Example get123 = new Example();
 
-            Future<Integer> x = executor.submit(() -> {
-                String threadName = Thread.currentThread().getName();
+        Future<Integer> x = executor.submit(() -> {
+            String threadName = Thread.currentThread().getName();
 
-                System.out.println("Hello " + threadName);
+            System.out.println("Hello " + threadName);
 
-                Thread.sleep( 5000);
-                System.out.println("Bye " + threadName);
+            Thread.sleep(5000);
+            System.out.println("Bye " + threadName);
 
-                return 123;
-            });
+            return 123;
+        });
 
-            Thread.sleep( 1000);
-            System.out.println("after 1 sec");
+//        Thread.sleep(1000);
+        System.out.println("after 1 sec");
 
 
-            Thread.sleep( 5000);
+//        Thread.sleep(5000);
 
-            System.out.println("finish");
-            System.out.println(x.get());
-            System.out.println("finished x.get()");
+        System.out.println("finish");
+        System.out.println(x.get());
+        System.out.println("finished x.get()");
 
-        } catch (Exception e){
-            e.printStackTrace();
-        }
 
 //
 //
@@ -60,7 +63,7 @@ public class HighLevelExample {
         public Integer call() throws Exception {
             String threadName = Thread.currentThread().getName();
 
-            System.out.println("Hello " + threadName);
+            System.out.println("Hello from Example object in: " + threadName);
 
             Thread.sleep( 5000);
             System.out.println("Bye " + threadName);

@@ -1,8 +1,12 @@
 package lec1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MethodExample {
     public static void main(final String[] args) {
-
+        List<String> q = new ArrayList<>();
+        System.out.println(String.join(", ", q));
 
 
         final int[] s = new int[6];
@@ -12,11 +16,11 @@ public class MethodExample {
         }
 
 
-        System.out.println(sum(s));
+//        System.out.println(sum(s));
     }
 
 
-    public static int sum (final int[] integers){
+    private static int sum (final int[] integers){
         int sum = 0;
 
         for(final int i : integers){

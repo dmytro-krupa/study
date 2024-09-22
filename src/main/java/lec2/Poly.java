@@ -38,14 +38,18 @@ public class Poly {
             this.name = name;
         }
     }
+
+
     static class User extends Person{
-        int age;
+
         @Override
         public String print() {
             return "User: " + this.getName();
         }
     }
+
     static class Admin extends Person{
+
         @Override
         public String print() {
             return "Admin: " + this.getName();

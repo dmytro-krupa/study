@@ -1,7 +1,7 @@
 package lec5.generic;
 
 
-import lec2.oop.User;
+import lec2.oop_2022.User;
 
 import java.time.LocalDate;
 

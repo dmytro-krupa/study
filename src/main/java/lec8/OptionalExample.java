@@ -11,7 +11,7 @@ public class OptionalExample {
     public static void main(String[] args) throws Exception{
         final User user1 = new User("firstName", "lastName", "email@ukr.net", 12, Collections.singletonList("someNote"));
 //        final User user1 = null;
-        Optional<User> optional = Optional.ofNullable(user1);
+        Optional<User> optional = Optional.of(user1);
 
 
 //        final User user2 = new User("O", "lastName", "email@ukr.net", 12, Collections.singletonList("someNote"));

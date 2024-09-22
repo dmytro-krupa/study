@@ -18,6 +18,7 @@ public class Singleton {
         if (instance == null) {
             instance = new Singleton(value);
         }
+        System.out.println("singleton was reused");
         return instance;
     }
 }

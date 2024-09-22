@@ -1,15 +1,9 @@
 package lec1;
 
-
-import lec2.AccessExample;
-
 public class SwitchExample {
     public static void main(String[] args) {
 
-        double x = 0.4;
-        System.out.println(x);
-
-        int a = 5;
+        int a = 4;
 
         switch (a){
             case 1:
@@ -24,7 +18,12 @@ public class SwitchExample {
                 System.out.println("default");
         }
 
-
+        switch (a){
+            case 1 -> System.out.println(1);
+            case 2 -> System.out.println(2);
+            case 3 -> System.out.println(3);
+            default -> System.out.println("default");
+        }
 
     }
 }

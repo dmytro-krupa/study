@@ -26,22 +26,20 @@ public class OOPExample {
 
     public static void main(String[] args) {
         B b = new B(5);
+        System.out.println(b.a);
+        System.out.println(((B)((A)b)).a);
+
+
         A a = b;
 
-//        C c = new C(2);
+        C c = new C(2);
 
-//        a = c;
+        a = c;
 
-        System.out.println(((A)b).a);
-        System.out.println(a.a);
-
-
-//        System.out.println(a instanceof C);
+        System.out.println(a instanceof C);
 
 
-
-
-//        System.out.println(((B)a).a);
+        System.out.println(((B)a).a);
 
 
     }

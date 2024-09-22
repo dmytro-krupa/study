@@ -20,7 +20,7 @@ public class SynchronizedExample {
 
         @Override
         public void run() {
-            synchronized (this){
+            synchronized (resource){
                 for(int i = 0; i < 5; i++){
                     ++resource.i;
                     System.out.printf("%s %d \n", Thread.currentThread().getName(), resource.i);
