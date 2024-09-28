@@ -1,13 +1,12 @@
 package lec6;
 
-import lec4.dataStructure.LinkedList;
-import lec4.dataStructure.Node;
+import lec4.old.dataStructure.LinkedList;
+import lec4.old.dataStructure.Node;
 
 import java.util.Iterator;
 
 public class IteratorExample {
     public static void main(String[] args) {
-
 
         IterableLinkedList linkedList = new IterableLinkedList();
 
@@ -23,9 +22,7 @@ public class IteratorExample {
     }
 
     public static class IterableLinkedList extends LinkedList implements Iterable<Integer>{
-        public IterableLinkedList() {
-
-        }
+        public IterableLinkedList() {}
 
         @Override
         public Iterator<Integer> iterator() {

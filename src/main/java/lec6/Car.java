@@ -3,7 +3,7 @@ package lec6;
 import java.util.Comparator;
 import java.util.Iterator;
 
-public class Car implements Comparable<Car> , Iterable<Car>{
+public class Car implements Comparable<Car> {
     public int price;
     public int year;
     public String carBrand;
@@ -24,11 +24,6 @@ public class Car implements Comparable<Car> , Iterable<Car>{
 
     public String getCarBrand() {
         return carBrand;
-    }
-
-    @Override
-    public Iterator<Car> iterator() {
-        return null;
     }
 
     @Override

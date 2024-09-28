@@ -1,4 +1,4 @@
-package lec5;
+package lec5.old;
 
 import lec6.Car;
 
@@ -43,12 +43,12 @@ public class MapExample {
         carMap.put(cars.get(2), cars.get(2).getPrice());
 
 
-//
-//        for(Map.Entry<Car, Integer> entry: carMap.entrySet()){
-//            System.out.println(entry.getKey() + " " + entry.getValue());
-//        }
-//
-//        System.out.println("carMap = " + carMap);
+
+        for(Map.Entry<Car, Integer> entry: carMap.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        System.out.println("carMap = " + carMap);
 
 
 

@@ -52,20 +52,49 @@ public class Agenda {
 
 
 
-
-
-
   Лекція 4
+    /part_1
 
-    Робота з датою
+    Приклад (ремонт квартири)
+    switch + yield
     Процес ініціалізації
     method overload example
+    many args
     autoboxing
-    switch + yield
-    Приклад (ремонт квартири)
+    Generic-s
+    Container (example)
+
+  Лекція 5
+    /part_1
+
+    Pair ex
+    Container (example 2)
+    BigDecimal
+    Маркерний та функціональний інтерфейси
+    Collections
+    List, ArrayList, LinkedList
+    Set, HashSet
+    Map, HashMap, TreeMap
+
+    /part_2
+    Приклад (студенти, групи, предмети)
+    HashSet/HashMap with bad hash/equals
 
 
-Лабораторна 3: простий планувальник з типами завдань, розрахунок книжок
+
+
+
+  Лекція 6
+    Comparable, Comparator
+    Enum
+    Switch + enum
+    Exceptions
+
+  Лекція 7
+    Classes
+    Stream
+  Лекція 8
+    Робота з датою
 
 
      */

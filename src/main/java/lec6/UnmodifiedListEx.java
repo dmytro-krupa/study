@@ -1,6 +1,7 @@
 package lec6;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,7 +19,10 @@ public class UnmodifiedListEx {
         List unmodifiableList = Collections.unmodifiableList(userNames);
 
 //        unmodifiableList.add("4");
-
+        //
+        //List.of()
+//        Arrays.asList() --
+        //
         System.out.println(unmodifiableList);
 
     }

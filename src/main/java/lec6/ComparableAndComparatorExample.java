@@ -7,8 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-//it - 21/22
-//it - 13
 
 public class ComparableAndComparatorExample {
     public static void main(String[] args) {
@@ -31,6 +29,7 @@ public class ComparableAndComparatorExample {
 //        System.out.println(cars.stream().sorted().collect(Collectors.toList()));
 
 
+        Collections.sort(cars);
         Collections.sort(cars, new CarYearComparator());
 
 

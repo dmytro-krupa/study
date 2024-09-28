@@ -1,33 +1,14 @@
-package lec4;
+package lec4.old;
 
 public class MethodOverloadExample {
     public static void main(String[] args) {
         f(4, "");
-       int x = f(4, "");
-//        f();
-//        f(1);
-//        f();
+        f();
+        f(1);
 
-        var a = 3;
+        f();
 
-//        someMethod(a, 0, null);
     }
-
-
-//    static void square(int a){
-//        rectangle(a, a);
-//    }
-//    static void rectangle(int a, int b){}
-
-//    static void someMethod(int a){
-//        someMethod(a, 0, null);
-//        //....
-//    }
-//
-//    static void someMethod(int a, double b, Object x){
-//        //....
-//    }
-//
 
 
     static void f(){
@@ -39,7 +20,7 @@ public class MethodOverloadExample {
         return 1;
     }
     static int f(long i){
-        System.out.println("int f(long)");
+        System.out.println("long f(int)");
         return 1;
     }
 
