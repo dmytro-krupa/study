@@ -80,21 +80,32 @@ public class Agenda {
     Приклад (студенти, групи, предмети)
     HashSet/HashMap with bad hash/equals
 
-
-
-
-
   Лекція 6
-    Comparable, Comparator
-    Enum
-    Switch + enum
-    Exceptions
+    /part1
+    Чому інтерфейси мають бути зліва від присвоєння
+    Exceptions (ієрархія, checked/unchecked)
 
   Лекція 7
+    /part_1
+    Comparable, Comparator
+    Unmodified list
+    Enum
+    Switch + enum
+
+    /part_2
     Classes
     Stream
+
+
   Лекція 8
-    Робота з датою
+        тести
+
+  Лекція 9
+        Maven
+        Spring boot
+        KISS, DRY, YAGNI
+        Optional
+        Робота з датою
 
 
      */

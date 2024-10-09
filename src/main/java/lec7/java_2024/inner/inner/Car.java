@@ -1,4 +1,4 @@
-package lec7.inner_2023.inner;
+package lec7.java_2024.inner.inner;
 
 public class Car {
     private String brand = "34";

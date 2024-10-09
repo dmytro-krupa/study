@@ -4,17 +4,10 @@ import java.io.IOException;
 
 public  class TryCatchExample {
     public static void main(String[] args){
-
-        TryCatchExample tryCatchExample = new TryCatchExample();
-
-        int x = 1;
-        int y = 2;
-
-        int c = x++ + ++y;
-        System.out.println(c);
         try {
             int x1 = get();
             System.out.println("x1 = " + x1);
+
         } catch (NullPointerException | ArithmeticException e){
             System.out.println("catch block");
         } catch (RuntimeException e){
@@ -52,12 +45,11 @@ public  class TryCatchExample {
     static int get() throws IOException{
 
 
-
         if(true){
             IOException exception = new IOException("MORE DETAILS");
             throw exception;
         }
-        return 5_2;
+        return 52;
     }
 
 }

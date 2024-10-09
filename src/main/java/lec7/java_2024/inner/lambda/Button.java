@@ -1,4 +1,4 @@
-package lec7.inner_2023.lambda;
+package lec7.java_2024.inner.lambda;
 
 @FunctionalInterface
 public interface Button {

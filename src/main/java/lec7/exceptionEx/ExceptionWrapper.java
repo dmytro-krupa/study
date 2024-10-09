@@ -5,25 +5,23 @@ public class ExceptionWrapper {
         test2();
     }
 
-    static void test1(){
-        if(true){
-            throw new ArithmeticException();
-        }
+    static void test1() {
+        int x = 4 / 0;
     }
 
-    static void test2(){
+    static void test2() {
         try {
             test1();
-        } catch (ArithmeticException e){
+        } catch (ArithmeticException e) {
 //            throw e;
-//            throw new ArithmeticException();
-            throw new RuntimeException("frfrf", e);
+//            throw new NullPointerException();
+//            throw new RuntimeException("something inside test1()", e);
+
+            var divideByZeroException = new DivideByZeroException("somebody try divide by 0 in method test1()");
+            throw new RuntimeException(divideByZeroException);
         }
     }
+
 }
 
-
-// KISS
-// DRY
-// YAGNI
 

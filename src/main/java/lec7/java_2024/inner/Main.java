@@ -1,6 +1,4 @@
-package lec7.inner_2023;
-
-import lec7.inner_2023.static_inner.StaticInner;
+package lec7.java_2024.inner;
 
 public class Main {
     public static void main(String[] args) {
