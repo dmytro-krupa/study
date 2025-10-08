@@ -4,29 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MethodExample {
-    public static void main(final String[] args) {
-        List<String> q = new ArrayList<>();
-        System.out.println(String.join(", ", q));
+    public static void main(final String... args) {
+        int[] array = new int[3];
 
+        array[0] = 5;
+        array[1] = 8;
+        array[2] = 10;
 
-        final int[] s = new int[6];
-
-        for (int i = 0; i < s.length; i++){
-            s[i] = i;
-        }
-
-
-//        System.out.println(sum(s));
+        System.out.println(sum(5, 8, 10));
+        System.out.println(sum("324r"));
     }
 
-
-    private static int sum (final int[] integers){
+    static int sum (String s, int... someArray){
+        System.out.println(s);
         int sum = 0;
 
-        for(final int i : integers){
+        for(var i : someArray){
             sum += i;
         }
 
         return sum;
     }
+    static int sum (int a, int b){
+        return a + b;
+    }
+    static int sum (int a, int b, int c){
+        return a + b + c;
+    }
+
 }

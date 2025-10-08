@@ -51,7 +51,7 @@ public class ForExample {
 
 
 //        read only
-        //for-each
+        //for в стилі for-each
         for(int number : d){
             number = 7;
             System.out.println(number);
@@ -62,7 +62,6 @@ public class ForExample {
         }
 
 
-        //           number = 7;
 
         for(int number : d){
 //            System.out.println("Foreach: " + number);

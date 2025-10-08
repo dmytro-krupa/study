@@ -16,7 +16,7 @@ public class ArrayExample {
 
         int size = 4;
 
-        int[] b = new int[size];
+        int[] b = new int[size * 2];
 
         b[0] = 5;
         b[1] = 50;

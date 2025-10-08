@@ -1,4 +1,4 @@
-package lec5;
+package lec5.old;
 
 public class Bug {
     public static void main(String[] args) {

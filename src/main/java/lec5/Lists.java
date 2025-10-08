@@ -1,13 +1,14 @@
 package lec5;
 
-import lec5.old.lec5_2023.dataStructure_2023.ArrayList;
-import lec5.old.lec5_2023.dataStructure_2023.LinkedList;
-import lec5.old.lec5_2023.dataStructure_2023.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Lists {
     public static void main(String[] args) {
+
         List<Integer> arrayList = new ArrayList<>(1);
-        
+
         long start = System.nanoTime();
         
         for(int i = 0; i < 10_000; i++){
@@ -35,10 +36,31 @@ public class Lists {
         int b1 = linkedList.get(7_943);
         long linkedListGet = System.nanoTime() - start;
 
-        System.out.println("ArrayList  create = " + arrayListCreate);
+
+
+        //=========================
+        start = System.nanoTime();
+        arrayList.remove(Integer.valueOf(7_943));
+        long arrayListRemove = System.nanoTime() - start;
+        //=========================
+        start = System.nanoTime();
+        linkedList.remove(Integer.valueOf(7_943));
+        long linkedListRemove = System.nanoTime() - start;
+
+
+
+
+
+
+        System.out.println();
+        System.out.println("ArrayList create =  " + arrayListCreate);
         System.out.println("LinkedList create = " + linkedListCreate);
-        System.out.println("ArrayList  get = " + arrayListGet);
+        System.out.println("===============================================");
+        System.out.println("ArrayList get =  " + arrayListGet);
         System.out.println("LinkedList get = " + linkedListGet);
+        System.out.println("===============================================");
+        System.out.println("ArrayList remove =  " + arrayListRemove);
+        System.out.println("LinkedList remove = " + linkedListRemove);
 
     }
 

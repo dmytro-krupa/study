@@ -22,5 +22,6 @@ public class SetEx {
             System.out.println("NO");
         }
 
+        System.out.println(set);
     }
 }

@@ -35,16 +35,16 @@ public class OpExample {
         boolean t = true;
         boolean f = false;
 
-        System.out.println(t | f);
-        System.out.println("======");
-
-
-        System.out.println(true1() | false1());
-        System.out.println("======");
-        System.out.println(true1() || false1());
-        System.out.println("======");
-        System.out.println("======");
-        System.out.println(a | b); //побітова операція
+//        System.out.println(t | f);
+//        System.out.println("======");
+//
+//
+//        System.out.println(true1() | false1());
+//        System.out.println("======");
+//        System.out.println(true1() || false1());
+//        System.out.println("======");
+//        System.out.println("======");
+//        System.out.println(a | b); //побітова операція
 
         // &    |
 
@@ -58,14 +58,14 @@ public class OpExample {
         boolean isRainingNow = isRain && !isSun && isHot;
 
         if (isRainingNow) {
-            System.out.println("Дощить !!!");
+            System.out.println("Гроза !!!");
         } else {
 //            System.out.println("Хороша погода !!!");
         }
 
 
         if (isRainingNow) {
-            System.out.println("Дощить !!!");
+//            System.out.println("Дощить !!!");
         } else if (true) {
 
         } else {

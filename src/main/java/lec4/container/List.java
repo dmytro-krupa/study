@@ -17,7 +17,7 @@ public class List {
             Container []oldArray = array;
             array = new Container[oldArray.length * 2];
 
-            for( int i = 0; i <= lastElementIndex; i++){
+            for(int i = 0; i <= lastElementIndex; i++){
                 array[i] = oldArray[i];
             }
 
