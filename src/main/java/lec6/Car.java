@@ -26,12 +26,6 @@ public class Car implements Comparable<Car> {
         return carBrand;
     }
 
-    @Override
-    public int hashCode() {
-        return 0;
-    }
-
-    //this.compareTo(car)
 
     @Override
     public int compareTo(Car car) {

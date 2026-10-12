@@ -3,9 +3,8 @@ package lec9.solid;
 public class L {
 
     public static void main(String[] args) {
-        Rectangle rectangle = new Square();
+        Rectangle rectangle = new Rectangle();
 
-        rectangle.setA(2);
         rectangle.setB(5);
 
         System.out.println(rectangle.getArea());
@@ -13,7 +12,7 @@ public class L {
 
 
     static class Rectangle{
-        protected int a;
+        protected int a; // = 0
         protected int b;
 
         public void setA(int a) {
@@ -33,12 +32,12 @@ public class L {
     static class Square extends Rectangle{
         public void setA(int a) {
             this.a = a;
-//            this.b = a;
+            this.b = a;
         }
 
         public void setB(int b) {
             this.a = b;
-//            this.b = b;
+            this.b = b;
         }
     }
 

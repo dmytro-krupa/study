@@ -1,7 +1,6 @@
 package lec5;
 
 
-//type erasure
 
 public class Pair <K, V> {
     private K key;

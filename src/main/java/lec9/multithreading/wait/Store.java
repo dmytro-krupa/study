@@ -2,14 +2,13 @@ package lec9.multithreading.wait;
 
 public class Store {
 
-    //СКИНУТИ СТАТТЮ по WAIT і по SOLID !!!
-    private int product=0;
+    private int product = 0;
+
     public synchronized void get() {
-        while (product<1) {
+        while (product < 1) {
             try {
                 wait();
-            }
-            catch (InterruptedException e) {
+            } catch (InterruptedException e) {
             }
         }
         product--;
@@ -17,12 +16,12 @@ public class Store {
         System.out.println("Products left: " + product);
         notify();
     }
+
     public synchronized void put() {
-        while (product>=3) {
+        while (product >= 3) {
             try {
                 wait();
-            }
-            catch (InterruptedException e) {
+            } catch (InterruptedException e) {
             }
         }
         product++;

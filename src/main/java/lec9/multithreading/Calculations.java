@@ -12,12 +12,12 @@ public class Calculations {
     }
 
     public static void calc2(){
-        System.out.println("calc2 started");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e){
-            System.out.println("Interrupted exception");
-            Thread.currentThread().interrupt();
+                System.out.println("calc2 started");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e){
+                    System.out.println("Interrupted exception");
+                    Thread.currentThread().interrupt();
         }
         System.out.println("calc2 finished");
     }

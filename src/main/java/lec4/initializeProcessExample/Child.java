@@ -22,6 +22,7 @@ public class Child extends Parent {
     //6
     public Child() {
         //неявно викликається батьківський конструктор
+
         System.out.println("CHILD : public static int a = " + a);
         System.out.println("CHILD : public static int b = " + b);
     }

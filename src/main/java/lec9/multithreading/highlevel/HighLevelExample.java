@@ -24,16 +24,7 @@ public class HighLevelExample {
 
         Example get123 = new Example();
 
-        Future<Integer> x = executor.submit(() -> {
-            String threadName = Thread.currentThread().getName();
-
-            System.out.println("Hello " + threadName);
-
-            Thread.sleep(5000);
-            System.out.println("Bye " + threadName);
-
-            return 123;
-        });
+        Future<Integer> x = executor.submit(get123);
 
 //        Thread.sleep(1000);
         System.out.println("after 1 sec");

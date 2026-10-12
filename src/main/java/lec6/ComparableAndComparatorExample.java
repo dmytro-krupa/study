@@ -2,10 +2,7 @@ package lec6;
 
 import lec2.OOPExample;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ComparableAndComparatorExample {
@@ -21,6 +18,7 @@ public class ComparableAndComparatorExample {
 
 
     compareTo повертає 0 коли об'єкти рівні
+
     число > 0 коли this більший ніж параметр
     число < 0 коли this менший ніж параметр
  */
@@ -32,8 +30,13 @@ public class ComparableAndComparatorExample {
         Collections.sort(cars);
         Collections.sort(cars, new CarYearComparator());
 
+        Set<Integer> x = new HashSet<>();
 
-        System.out.println(cars);
+//        System.out.println(cars);
+
+
+
+
 
     }
 

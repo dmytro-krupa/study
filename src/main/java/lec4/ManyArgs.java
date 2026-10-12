@@ -1,13 +1,14 @@
 package lec4;
 
 public class ManyArgs {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         int a1 = 1;
         int a2 = 2;
         int a3 = 3;
         int a4 = 4;
 
-        System.out.println(sum(a1, a2));
+
+        System.out.println(sum(a1, a2, a3, a4, 7,3,2));
     }
 
     static int sum(int first, int... q){

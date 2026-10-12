@@ -13,6 +13,10 @@ public class CarYearComparator implements Comparator<Car> {
             return -1;
         }
 
+        if(o1.carBrand.length() > o2.carBrand.length()){
+            return 1;
+        }
+
         return 0;
     }
 }

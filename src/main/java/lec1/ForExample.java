@@ -57,6 +57,7 @@ public class ForExample {
             System.out.println(number);
         }
 
+
         for(var x : d){
             System.out.println(x);
         }
@@ -68,19 +69,19 @@ public class ForExample {
         }
 
         //=========================================
-
-
-        int[][] x = {{10},{20},{30}};
-
-        for(int i = 0; i < x.length; i++){
-            for (int j = 0; j < x[i].length; j++){
-                System.out.print(x[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        //====================
-        int price = 10;
-        System.out.println("Price per week = " + (price * DAYS_PER_WEEK));
+//
+//
+//        int[][] x = {{10},{20},{30}};
+//
+//        for(int i = 0; i < x.length; i++){
+//            for (int j = 0; j < x[i].length; j++){
+//                System.out.print(x[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+//
+//        //====================
+//        int price = 10;
+//        System.out.println("Price per week = " + (price * DAYS_PER_WEEK));
     }
 }

@@ -17,8 +17,8 @@ public class ExceptionWrapper {
 //            throw new NullPointerException();
 //            throw new RuntimeException("something inside test1()", e);
 
-            var divideByZeroException = new DivideByZeroException("somebody try divide by 0 in method test1()");
-            throw new RuntimeException(divideByZeroException);
+//            var divideByZeroException = new DivideByZeroException("somebody try divide by 0 in method test1()");
+//            throw new RuntimeException(divideByZeroException);
         }
     }
 

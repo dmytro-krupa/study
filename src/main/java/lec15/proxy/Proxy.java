@@ -12,8 +12,4 @@ public class Proxy extends Heavy{
             return saved;
         }
     }
-
-    public void apply(){
-
-    }
 }

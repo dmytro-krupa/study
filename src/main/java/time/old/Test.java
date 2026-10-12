@@ -1,10 +1,6 @@
-package time;
+package time.old;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 
 public class Test implements Serializable {
     static String str = "Team 1";

@@ -1,6 +1,5 @@
 package lec5.old;
 
-import study.A;
 
 import java.util.*;
 

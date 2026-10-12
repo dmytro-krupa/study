@@ -16,6 +16,7 @@ public class I {
         void deleteFile();
         void addFile();
         void moveFile();
+//        void connectToServer(String username);
     }
 
     static class RemoteServerFileManager implements FileManager, RemoteServerConnector{

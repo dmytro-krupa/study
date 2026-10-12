@@ -1,7 +1,11 @@
 package lec9.solid;
 
-public class D {
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class D {
+//D
     public static void main(String[] args) {
         CrudRepository crudRepository = new MySQLCrudRepository();
         EmailSender emailSender = new JavaEmailSender();

@@ -6,7 +6,23 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class AnonymousClassExample {
+
     public static void main(String[] args) {
+
+
+    Action button5 = new Action() {
+        @Override
+        public void invoke(int i, int o) {
+            System.out.println("Button 5 pressed");
+        }
+    };
+
+
+        Action button6 = (i, o) -> System.out.println("Button 6 pressed = " + (i + o));
+
+
+        button6.invoke(7, 4);
+
 
         int x = 4;
 

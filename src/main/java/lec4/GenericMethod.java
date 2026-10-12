@@ -1,8 +1,18 @@
 package lec4;
 
-public class GenericMethod {
+public class GenericMethod  {
+
+
     public static void main(String[] args) {
         System.out.println(sum(1.3, 3.2));
+
+
+        test("My new test");
+        test(100);
+
+
+
+
 
     }
 

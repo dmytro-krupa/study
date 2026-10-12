@@ -16,78 +16,61 @@ public class Agenda {
 
 
 Лекція 2
+Вступ (лабораторні, залік, АІ, субєктивність коду)
+Життєвий цикл ПЗ (waterfall, agile, devops), JDK/JVM, IntelliJ IDEA, Maven/Gradle,
+Значення полів в обєкті, нааписання методів
+Приклад "Магазин" (класи та інтерфейси)
 
-    1. Що можна отримати зі Sting-а
-    2 Scope
-    3. ООП
-    4. Клас і об'єкт
-    5 GC
-    6. Поля
-    7. Режим доступу
-    8. Методи
-    9. Static i non-static
-    10. геттери і сеттери
-    11. конструктор
-    12. Успадкування
-
+enum
 
 Лекція 3
-
-    /part_1
-    Поліморфізм
-    Асоціація, Агрегація і Композиція.
     Як GC видаляє об'єкти.
-    передача обєктів і примітивів у метод
     final class/method/field
+    як створити клас з константами
 
-
-    /part_2
+    List як інструмент!
+    передача обєктів і примітивів у метод
     Object methods
     equals i hashcode
-    як створити клас з константами
-    абстрактні класи
-    інтерфейси
-    Приклад (нотифікейшини)
+
+
+
 
 
 
 
   Лекція 4
-    /part_1
-
-    Приклад (ремонт квартири)
     switch + yield
-    Процес ініціалізації
-    method overload example
     many args
+    Ініціалізація полів класу
+
     autoboxing
-    Generic-s
+    Дженеріки
+    List, ArrayList, LinkedList
+    Collections
+    Set, HashSet
+    Map, HashMap, TreeMap
+    HashSet/HashMap with bad hash/equals
     Container (example)
 
   Лекція 5
-    /part_1
+    «Reason to change» як SRP-інтуїція
+    Rich vs anemic model
 
-    Pair ex
-    Container (example 2)
-    BigDecimal
     Маркерний та функціональний інтерфейси
-    Collections
-    List, ArrayList, LinkedList
-    Set, HashSet
-    Map, HashMap, TreeMap
+    Comparable, Comparator
 
-    /part_2
-    Приклад (студенти, групи, предмети)
-    HashSet/HashMap with bad hash/equals
+  Лекція 5.1
+    Exceptions (ієрархія, checked/unchecked)
+    Як пишеться код
+
 
   Лекція 6
     /part1
     Чому інтерфейси мають бути зліва від присвоєння
-    Exceptions (ієрархія, checked/unchecked)
 
   Лекція 7
     /part_1
-    Comparable, Comparator
     Unmodified list
     Enum
     Switch + enum
@@ -103,12 +86,21 @@ public class Agenda {
   Лекція 9
         Maven
         Spring boot
-        KISS, DRY, YAGNI
-        Optional
-        Робота з датою
 
+
+    лекція 14
+        Робота з датою
+        KISS, DRY, YAGNI
+        паттерни
+
+    лекція 15
+
+    консультація по питаннях
+    логер у коді
 
      */
+
+
 
 
 }

@@ -63,9 +63,17 @@ public class Item{
                 '}' + '\n';
     }
 
+    @Override
     public Item clone(){
         Item item = new Item();
-        List<String> comments = new ArrayList<>(this.comments);
+
+        List<String> comments = new ArrayList<>();
+
+        this.comments.forEach(comment -> {
+            comments.add(new String((comment)));
+        });
+
+
 
         item.setName(this.name);
         item.setPrice(this.price);

@@ -8,9 +8,12 @@ public class SetEx {
         Set<Integer> set = new HashSet<>();
         set.add(1);
         set.add(2);
-        set.add(4);
         set.add(1);
         set.add(5);
+        set.add(4);
+
+
+
 //
 //        for(var x : set){
 //            System.out.println(x);

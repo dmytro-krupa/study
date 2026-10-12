@@ -1,6 +1,6 @@
 package lec15.factory.toys;
 
-public class PlasticCar implements Car{
+public class PlasticCar implements Car {
     public String name = "PlasticCar";
 
     @Override

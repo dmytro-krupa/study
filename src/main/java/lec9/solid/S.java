@@ -8,10 +8,6 @@ public class S {
         private String surname;
         private List<Access> accessList;
 
-        public String getFullName(){
-            return name + " " + surname;
-        }
-
         public boolean hasAccessToFile(String fileName){
             List<Access> neededAccess = accessDummyMethod(fileName);
 

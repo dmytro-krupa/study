@@ -35,6 +35,9 @@ public class Car {
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
+    public void createNewEngine(Engine engine) {
+        this.engine = engine;
+    }
 
 
     public class Engine {

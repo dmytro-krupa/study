@@ -1,7 +1,5 @@
 package practice.gas_station.entity;
 
-import study.A;
-
 import java.util.ArrayList;
 import java.util.List;
 

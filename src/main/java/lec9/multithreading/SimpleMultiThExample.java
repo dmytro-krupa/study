@@ -33,8 +33,8 @@ public class SimpleMultiThExample {
             //don't do that
         }
 //
-//        simpleThread2.stopThread();
-        simpleThread2.interrupt();
+        simpleThread2.stopThread();
+//        simpleThread2.interrupt();
 
 
 
@@ -67,8 +67,8 @@ public class SimpleMultiThExample {
         @Override
         public void run() {
 
-            while (!isInterrupted()){
-//            while (!shouldBeStopped){
+//            while (!isInterrupted()){
+            while (!shouldBeStopped){
                 Calculations.calc2();
             }
 

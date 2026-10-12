@@ -9,6 +9,10 @@ public class Lists {
 
         List<Integer> arrayList = new ArrayList<>(1);
 
+
+
+
+
         long start = System.nanoTime();
         
         for(int i = 0; i < 10_000; i++){

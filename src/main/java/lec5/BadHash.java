@@ -5,9 +5,6 @@ import java.util.*;
 
 public class BadHash {
     public static void main(String[] args) {
-
-
-
         Map<A, Integer> set = new HashMap<>();
 
         set.put(new A(4), 5);

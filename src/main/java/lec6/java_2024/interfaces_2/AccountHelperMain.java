@@ -1,6 +1,5 @@
 package lec6.java_2024.interfaces_2;
 
-import study.A;
 
 import java.util.ArrayList;
 import java.util.HashSet;
